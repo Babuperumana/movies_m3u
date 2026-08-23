@@ -57,18 +57,15 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-          # Stage the playlist and cache
           git add playlist.m3u .playlist_cache.json
 
-          # Commit only if there are changes
           if git diff --cached --quiet; then
             echo "No changes to commit -- playlist is up to date"
           else
             TIMESTAMP=$(date -u +"%Y-%m-%d %H:%M UTC")
-            git commit -m "chore: update playlist (${{ steps.count.outputs.count }} entries)
-
-Auto-updated by GitHub Actions at $TIMESTAMP"
-
+            COUNT=${{ steps.count.outputs.count }}
+            printf "chore: update playlist (%d entries)\n\nAuto-updated by GitHub Actions at %s\n" "$COUNT" "$TIMESTAMP" > /tmp/commit_msg.txt
+            git commit -F /tmp/commit_msg.txt
             git push
             echo "Committed and pushed updates"
           fi
