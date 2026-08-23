@@ -9,6 +9,7 @@ venv/
 # Playlist / cache (generated files)
 playlist.m3u
 .playlist_cache.json
+.page_cache.json
 
 # OS
 .DS_Store

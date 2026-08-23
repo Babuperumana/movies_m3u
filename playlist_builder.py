@@ -62,6 +62,7 @@ MOVIERULZ_DOMAINS = [
 ]
 
 DEFAULT_CACHE_FILE = ".playlist_cache.json"
+DEFAULT_PAGE_CACHE_FILE = ".page_cache.json"
 
 
 # ---------------------------------------------------------------------------
@@ -82,12 +83,16 @@ def _get(session, url, **kwargs):
 # Step 1: Discover movie listing pages
 # ---------------------------------------------------------------------------
 
-def discover_listing_pages(session, base_url):
+def discover_listing_pages(session, base_url, page_cache=None):
     """
     Find ALL paginated movie listing pages.
+    Uses a page cache to skip already-scraped pages on subsequent runs.
     The site only links to pages 0 and 15 in pagination, but has 500+ pages.
     We start from the last linked page and keep going until we hit empty pages.
     """
+    if page_cache is None:
+        page_cache = {}
+
     for domain in MOVIERULZ_DOMAINS:
         resp = _get(session, domain)
         if not resp or resp.status_code != 200:
@@ -106,21 +111,33 @@ def discover_listing_pages(session, base_url):
 
         if not page_nums:
             print("[scraper] No pagination found")
-            return [f"{domain}/movies"]
+            return [], page_cache
 
-        # Start from the highest linked page and discover beyond it
         start_page = max(page_nums)
         print(f"[scraper] Pagination shows up to page {start_page}, discovering more...")
 
-        # Collect pages from 1 to start_page
+        # First pass: check which pages are already cached
+        cached_pages = set(page_cache.keys())
+        print(f"[scraper] {len(cached_pages)} pages already in cache")
+
+        # Collect known page URLs (pages 1 to start_page from the linked range)
         for i in range(1, start_page + 1):
-            listing_urls.append(f"{domain}/movies/page/{i}")
+            page_url = f"{domain}/movies/page/{i}"
+            if page_url not in cached_pages:
+                listing_urls.append(page_url)
 
         # Keep fetching beyond the last linked page until empty
         consecutive_empty = 0
         page = start_page + 1
         while consecutive_empty < 3:
-            resp = _get(session, f"{domain}/movies/page/{page}")
+            page_url = f"{domain}/movies/page/{page}"
+            if page_url in cached_pages:
+                # We know this page exists, add it and continue
+                listing_urls.append(page_url)
+                page += 1
+                continue
+
+            resp = _get(session, page_url)
             if not resp or resp.status_code != 200:
                 consecutive_empty += 1
                 page += 1
@@ -131,18 +148,28 @@ def discover_listing_pages(session, base_url):
             unique_count = len(set(valid_urls))
 
             if unique_count > 0:
-                listing_urls.append(f"{domain}/movies/page/{page}")
+                listing_urls.append(page_url)
+                # Cache this page's movie URLs
+                page_cache[page_url] = list(set(valid_urls))
                 consecutive_empty = 0
             else:
                 consecutive_empty += 1
             page += 1
 
         last_page = page - consecutive_empty - 1
-        print(f"[scraper] Discovered {len(listing_urls)} pages (1-{last_page})")
-        return listing_urls
+        # Ensure all known pages from 1 to last_page are in the cache
+        for i in range(1, last_page + 1):
+            page_url = f"{domain}/movies/page/{i}"
+            if page_url not in page_cache:
+                page_cache[page_url] = []  # Mark as known (fetched during this run)
+
+        new_pages = len(listing_urls)
+        cached_count = last_page - new_pages
+        print(f"[scraper] Will fetch {new_pages} new pages, {cached_count} from cache (total: {last_page})")
+        return listing_urls, page_cache
 
     print("[scraper] Could not reach any Movierulz domain")
-    return []
+    return [], page_cache
 
 
 # ---------------------------------------------------------------------------
@@ -156,17 +183,39 @@ MOVIE_URL_RE = re.compile(
 )
 
 
-def extract_movie_links(session, listing_urls):
+def extract_movie_links(session, listing_urls, page_cache=None):
     """
     Scrape each listing page and collect movie entries.
-    Uses two extraction strategies:
-      1. <a title="Movie Name (Year) Quality [Language]" href="...">
-      2. <p><b>Movie Name (Year) Quality [Language]</b></p> inside .boxed .film
+    Uses page_cache to skip already-scraped pages.
     """
+    if page_cache is None:
+        page_cache = {}
+
     movies = []
     seen_urls = set()
 
     for listing_url in listing_urls:
+        # If this page is already cached, use cached URLs (no HTTP request)
+        cached_urls = page_cache.get(listing_url)
+        if cached_urls is not None:
+            print(f"[scraper]   {listing_url} -> {len(cached_urls)} movies (from cache)")
+            for url in cached_urls:
+                if url not in seen_urls:
+                    seen_urls.add(url)
+                    title = _guess_title_from_url(url)
+                    year = _guess_year_from_url(url)
+                    language = _guess_language(title, url)
+                    quality = _guess_quality(title)
+                    movies.append({
+                        "title": title,
+                        "url": url,
+                        "year": year,
+                        "language": language,
+                        "quality": quality,
+                    })
+            continue
+
+        # Not cached — fetch and scrape
         resp = _get(session, listing_url)
         if not resp or resp.status_code != 200:
             continue
@@ -208,10 +257,12 @@ def extract_movie_links(session, listing_urls):
                 "quality": quality,
             })
 
-        print(f"[scraper]   {listing_url} -> {len(found)} movies")
+        # Cache this page's results
+        page_cache[listing_url] = list(found.keys())
+        print(f"[scraper]   {listing_url} -> {len(found)} movies (fetched + cached)")
         time.sleep(POLITE_DELAY)
 
-    return movies
+    return movies, page_cache
 
 
 def _guess_year(title):
@@ -411,6 +462,34 @@ def _guess_group(movie):
 
 
 # ---------------------------------------------------------------------------
+# Page listing cache
+# ---------------------------------------------------------------------------
+
+def load_page_cache(cache_file):
+    """Load cached page→movie URL mappings from disk."""
+    path = Path(cache_file)
+    if path.exists():
+        try:
+            return json.loads(path.read_text())
+        except (json.JSONDecodeError, OSError):
+            pass
+    return {}
+
+
+def save_page_cache(cache, cache_file):
+    """Persist the page cache to disk."""
+    Path(cache_file).write_text(json.dumps(cache, indent=2))
+
+
+def get_known_page_urls(page_cache):
+    """Get set of all movie URLs already seen from page scraping."""
+    urls = set()
+    for page_url, movie_urls in page_cache.items():
+        urls.update(movie_urls)
+    return urls
+
+
+# ---------------------------------------------------------------------------
 # Step 5: Deduplication & caching
 # ---------------------------------------------------------------------------
 
@@ -516,30 +595,34 @@ def run(output="playlist.m3u", append=False, cache_file=DEFAULT_CACHE_FILE):
     Run the full pipeline: scrape -> extract -> build M3U.
 
     This is incremental:
-      - Scrapes ALL listing pages for movie links
-      - Skips movies already in the cache
+      - Uses page cache to skip already-scraped listing pages
+      - Skips movies already in the entry cache
       - Extracts streams for up to MAX_STREAMS_PER_RUN new movies
       - Over multiple runs, the playlist grows to include all movies
     """
     session = requests.Session()
     session.headers.update({"User-Agent": USER_AGENT})
 
-    # Step 1: Find ALL listing pages
-    listing_urls = discover_listing_pages(session, MOVIERULZ_DOMAINS[0])
+    # Load both caches
+    cache = load_cache(cache_file)
+    page_cache = load_page_cache(DEFAULT_PAGE_CACHE_FILE)
+
+    # Step 1: Discover listing pages (uses cache to skip known pages)
+    listing_urls, page_cache = discover_listing_pages(session, MOVIERULZ_DOMAINS[0], page_cache)
     if not listing_urls:
         print("[error] No listing pages found -- is Movierulz reachable?")
         sys.exit(1)
 
-    # Step 2: Collect ALL movie links from all pages
-    movies = extract_movie_links(session, listing_urls)
+    # Step 2: Collect movie links (uses cache for instant page loads)
+    movies, page_cache = extract_movie_links(session, listing_urls, page_cache)
     print(f"[scraper] Found {len(movies)} movies across all pages")
 
     if not movies:
         print("[info] No movies found -- skipping this run")
+        save_page_cache(page_cache, DEFAULT_PAGE_CACHE_FILE)
         return "#EXTM3U\n"
 
     # Step 3: Filter out already-processed movies using cache
-    cache = load_cache(cache_file)
     pending = []
     for movie in movies:
         eid = _make_entry_id(movie["url"])
@@ -550,6 +633,7 @@ def run(output="playlist.m3u", append=False, cache_file=DEFAULT_CACHE_FILE):
 
     if not pending:
         print("[info] All movies already in playlist -- up to date")
+        save_page_cache(page_cache, DEFAULT_PAGE_CACHE_FILE)
         return "#EXTM3U\n"
 
     # Step 4: Extract streams for a batch of pending movies
@@ -561,6 +645,7 @@ def run(output="playlist.m3u", append=False, cache_file=DEFAULT_CACHE_FILE):
 
     if not enriched:
         print("[info] No streams extracted -- skipping this run")
+        save_page_cache(page_cache, DEFAULT_PAGE_CACHE_FILE)
         return "#EXTM3U\n"
 
     # Step 5: Build M3U content
@@ -583,16 +668,16 @@ def run(output="playlist.m3u", append=False, cache_file=DEFAULT_CACHE_FILE):
             cleaned.append(line)
     m3u_content = "\n".join(cleaned)
 
-    # Step 8: Update cache with processed movies (success + failure)
+    # Step 8: Update caches
     for movie in enriched:
         cache[_make_entry_id(movie["url"])] = movie
-    # Also mark failed ones so we don't retry them every run
     enriched_urls = {_make_entry_id(m["url"]) for m in enriched}
     for movie in batch:
         eid = _make_entry_id(movie["url"])
         if eid not in enriched_urls and eid not in cache:
             cache[eid] = {"url": movie["url"], "failed": True}
     save_cache(cache, cache_file)
+    save_page_cache(page_cache, DEFAULT_PAGE_CACHE_FILE)
 
     return m3u_content
 
