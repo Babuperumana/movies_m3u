@@ -1,13 +1,22 @@
 #EXTM3U
 
-
-#EXTINF:-1 tvg-name="Irumudi (2026) DVDScr [Telugu]" tvg-logo="" group-title="Movies / Telugu",Irumudi (2026) DVDScr [Telugu]
-#EXTINF:-1 tvg-name="Makutam (2026) DVDScr [Telugu]" tvg-logo="" group-title="Movies / Telugu",Makutam (2026) DVDScr [Telugu]
-#EXTINF:-1 tvg-name="Lenin (2026) HDRip [Hindi]" tvg-logo="" group-title="Movies / Hindi",Lenin (2026) HDRip [Hindi]
-#EXTINF:-1 tvg-name="Sanjeev (2026) HDRip [Telugu]" tvg-logo="" group-title="Movies / Telugu",Sanjeev (2026) HDRip [Telugu]
-#EXTINF:-1 tvg-name="Dark (2026) HDRip [Tamil]" tvg-logo="" group-title="Movies / Tamil",Dark (2026) HDRip [Tamil]
-#EXTINF:-1 tvg-name="Hangman (2026) HDRip [Telugu]" tvg-logo="" group-title="Movies / Telugu",Hangman (2026) HDRip [Telugu]
-#EXTINF:-1 tvg-name="Karakkam (2026) HDRip [Tamil]" tvg-logo="" group-title="Movies / Tamil",Karakkam (2026) HDRip [Tamil]
-#EXTINF:-1 tvg-name="Karakkam (2026) HDRip [Telugu]" tvg-logo="" group-title="Movies / Telugu",Karakkam (2026) HDRip [Telugu]
-#EXTINF:-1 tvg-name="Karakkam (2026) HDRip [Malayalam]" tvg-logo="" group-title="Movies / Malayalam",Karakkam (2026) HDRip [Malayalam]
-#EXTINF:-1 tvg-name="Obsession (2026) HDRip [English]" tvg-logo="" group-title="Movies / English",Obsession (2026) HDRip [English]
+#EXTINF:-1 tvg-name="Hangman HDRip [Telugu]" tvg-logo="" group-title="Movies / Telugu",Hangman HDRip [Telugu]
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FMlhBNTY3MGhONE5ZTjhzNjY3Qk9Edz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Karakkam HDRip [Tamil]" tvg-logo="" group-title="Movies / Tamil",Karakkam HDRip [Tamil]
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FZTBNWUMrVDVSOEU0eVNJY1QzaXVFZz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Karakkam HDRip [Telugu]" tvg-logo="" group-title="Movies / Telugu",Karakkam HDRip [Telugu]
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FV3VmZWFyMFRlcDhqV2luSDA2L2FoZz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Karakkam HDRip [Malayalam]" tvg-logo="" group-title="Movies / Malayalam",Karakkam HDRip [Malayalam]
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FWHIrN2srMTZJeWxINkprNlM1ZXd2Zz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Obsession HDRip [English]" tvg-logo="" group-title="Movies / English",Obsession HDRip [English]
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FOVZ1ZnkySDcyY1BpNDVsOVFScGdoZz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Irumudi DVDScr [Telugu]" tvg-logo="" group-title="Movies / Telugu",Irumudi DVDScr [Telugu]
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FM0grd0tpT0pZT2dHVEkvVDk5TENLZz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Makutam DVDScr [Telugu]" tvg-logo="" group-title="Movies / Telugu",Makutam DVDScr [Telugu]
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FYmd1Z1ZiU3dOVlRiNGVqMHJuTG93QT09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Lenin HDRip [Hindi]" tvg-logo="" group-title="Movies / Hindi",Lenin HDRip [Hindi]
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FVEMvcGVqWXd1UXU0dWFVMlNJL0NCQT09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Sanjeev HDRip [Telugu]" tvg-logo="" group-title="Movies / Telugu", Sanjeev HDRip [Telugu]
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FNU1rY2tydnl5a0ZnL3dhbkxyZWxyQT09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Dark HDRip [Tamil]" tvg-logo="" group-title="Movies / Tamil",Dark HDRip [Tamil]
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FamRDMlFFOXMvcjRra2VmemZVY2JYUT09%2FxfgdYshjhYhj%3D%21sdsHsyG

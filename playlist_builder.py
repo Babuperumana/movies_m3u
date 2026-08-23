@@ -428,43 +428,62 @@ def deduplicate(movies, cache):
 
 
 def merge_with_existing(new_content, existing_file):
-    """Merge newly extracted movies into the existing playlist."""
+    """
+    Append new movie entries to the existing playlist.
+    Skips entries whose stream URL already exists in the playlist.
+    Preserves all existing entries and their URLs intact.
+    """
     existing_path = Path(existing_file)
-    if existing_path.exists() and existing_path.stat().st_size > 0:
-        existing = existing_path.read_text()
-        lines = existing.split("\n")
+    if not existing_path.exists() or existing_path.stat().st_size == 0:
+        return new_content
 
-        header_end = 0
-        for i, line in enumerate(lines):
-            if line.strip() == "":
-                header_end = i + 1
-                break
-        header = "\n".join(lines[:header_end])
+    existing = existing_path.read_text()
 
-        existing_urls = set()
-        for line in lines:
-            line = line.strip()
-            if line and not line.startswith("#"):
-                existing_urls.add(line)
+    # Collect existing stream URLs for dedup
+    existing_urls = set()
+    lines = existing.split("\n")
+    for i, line in enumerate(lines):
+        stripped = line.strip()
+        if stripped and not stripped.startswith("#"):
+            existing_urls.add(stripped)
 
-        new_lines = new_content.strip().split("\n")
-        filtered = []
-        skip = False
-        for line in new_lines:
-            if line.startswith("#EXTINF"):
-                skip = False
-                filtered.append(line)
-            elif line and not line.startswith("#"):
-                if line not in existing_urls:
-                    filtered.append(line)
-                else:
-                    skip = True
-            elif not skip:
-                filtered.append(line)
+    # Parse new entries into (header, url) pairs
+    new_entries = []
+    current_header = None
+    current_url = None
+    for line in new_content.strip().split("\n"):
+        stripped = line.strip()
+        # Skip the #EXTM3U header from build_m3u since existing has one
+        if stripped == "#EXTM3U" or stripped == "":
+            continue
+        if stripped.startswith("#EXTINF"):
+            current_header = stripped
+            current_url = None
+        elif not stripped.startswith("#"):
+            current_url = stripped
+            if current_header:
+                new_entries.append((current_header, current_url))
+                current_header = None
+                current_url = None
 
-        return header + "\n" + "\n".join(filtered) + "\n"
+    # Filter: only keep entries whose URL isn't already present
+    unique_new = [
+        (header, url)
+        for header, url in new_entries
+        if url not in existing_urls
+    ]
 
-    return new_content
+    if not unique_new:
+        return existing
+
+    # Build the appended content
+    appended_lines = ["", ""]
+    for header, url in unique_new:
+        appended_lines.append(header)
+        appended_lines.append(url)
+    appended_lines.append("")
+
+    return existing.rstrip("\n") + "\n" + "\n".join(appended_lines) + "\n"
 
 
 # ---------------------------------------------------------------------------
