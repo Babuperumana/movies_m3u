@@ -521,6 +521,19 @@ def run(output="playlist.m3u", append=False, cache_file=DEFAULT_CACHE_FILE):
     if append:
         m3u_content = merge_with_existing(m3u_content, output)
 
+    # Step 7: Ensure no duplicate #EXTM3U headers
+    lines = m3u_content.split("\n")
+    cleaned = []
+    extm3u_seen = False
+    for line in lines:
+        if line.strip() == "#EXTM3U":
+            if not extm3u_seen:
+                cleaned.append(line)
+                extm3u_seen = True
+        else:
+            cleaned.append(line)
+    m3u_content = "\n".join(cleaned)
+
     # Step 7: Save cache
     save_cache(cache, cache_file)
 
