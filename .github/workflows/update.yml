@@ -2,9 +2,8 @@ name: Update Playlist
 
 on:
   schedule:
-    # Run every 6 hours (at :00 of hours 0, 6, 12, 18 UTC)
     - cron: "0 */6 * * *"
-  workflow_dispatch:  # Allow manual trigger from GitHub UI
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -24,57 +23,22 @@ jobs:
           python-version: "3.12"
 
       - name: Install dependencies
-        run: |
-          python -m pip install --upgrade pip
-          pip install -r requirements.txt
-
-      - name: Configure proxy URL
-        run: |
-          # Use the Cloudflare Worker URL from secrets, or a default
-          if [ -n "${{ secrets.PROXY_URL }}" ]; then
-            echo "PROXY_TEMPLATE=${{ secrets.PROXY_URL }}/proxy?url={url}" >> $GITHUB_ENV
-          else
-            echo "PROXY_TEMPLATE=https://my-worker.workers.dev/proxy?url={url}" >> $GITHUB_ENV
-            echo "::warning::PROXY_URL secret not set -- using placeholder. Set it in repo Settings > Secrets."
-          fi
+        run: pip install -r requirements.txt
 
       - name: Build playlist
-        run: |
-          python playlist_builder.py \
-            --output playlist.m3u \
-            --append \
-            --cache .playlist_cache.json
+        run: python playlist_builder.py --output playlist.m3u --append --cache .playlist_cache.json
 
       - name: Count entries
         id: count
         run: |
           COUNT=$(grep -c "^#EXTINF" playlist.m3u || echo 0)
-          echo "count=$COUNT" >> $GITHUB_OUTPUT
-          echo "New playlist has $COUNT entries"
+          echo "count=$COUNT" >> "$GITHUB_OUTPUT"
 
       - name: Commit and push
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-
           git add playlist.m3u .playlist_cache.json
-
-          if git diff --cached --quiet; then
-            echo "No changes to commit -- playlist is up to date"
-          else
-            TIMESTAMP=$(date -u +"%Y-%m-%d %H:%M UTC")
-            COUNT=${{ steps.count.outputs.count }}
-            printf "chore: update playlist (%d entries)\n\nAuto-updated by GitHub Actions at %s\n" "$COUNT" "$TIMESTAMP" > /tmp/commit_msg.txt
-            git commit -F /tmp/commit_msg.txt
-            git push
-            echo "Committed and pushed updates"
-          fi
-
-      - name: Summary
-        if: always()
-        run: |
-          echo "=== Playlist Update Summary ==="
-          echo "Total entries: ${{ steps.count.outputs.count }}"
-          echo "Schedule: Every 6 hours"
-          echo "Proxy: $PROXY_TEMPLATE"
-          echo "==============================="
+          git diff --cached --quiet && echo "No changes to commit" && exit 0
+          git commit -m "chore: update playlist"
+          git push
