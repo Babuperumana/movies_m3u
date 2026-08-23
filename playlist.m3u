@@ -1,22 +1,671 @@
 #EXTM3U
 
-#EXTINF:-1 tvg-name="Hangman HDRip [Telugu]" tvg-logo="" group-title="Movies / Telugu",Hangman HDRip [Telugu]
-https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FMlhBNTY3MGhONE5ZTjhzNjY3Qk9Edz09%2FxfgdYshjhYhj%3D%21sdsHsyG
-#EXTINF:-1 tvg-name="Karakkam HDRip [Tamil]" tvg-logo="" group-title="Movies / Tamil",Karakkam HDRip [Tamil]
-https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FZTBNWUMrVDVSOEU0eVNJY1QzaXVFZz09%2FxfgdYshjhYhj%3D%21sdsHsyG
-#EXTINF:-1 tvg-name="Karakkam HDRip [Telugu]" tvg-logo="" group-title="Movies / Telugu",Karakkam HDRip [Telugu]
-https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FV3VmZWFyMFRlcDhqV2luSDA2L2FoZz09%2FxfgdYshjhYhj%3D%21sdsHsyG
-#EXTINF:-1 tvg-name="Karakkam HDRip [Malayalam]" tvg-logo="" group-title="Movies / Malayalam",Karakkam HDRip [Malayalam]
-https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FWHIrN2srMTZJeWxINkprNlM1ZXd2Zz09%2FxfgdYshjhYhj%3D%21sdsHsyG
-#EXTINF:-1 tvg-name="Obsession HDRip [English]" tvg-logo="" group-title="Movies / English",Obsession HDRip [English]
-https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FOVZ1ZnkySDcyY1BpNDVsOVFScGdoZz09%2FxfgdYshjhYhj%3D%21sdsHsyG
-#EXTINF:-1 tvg-name="Irumudi DVDScr [Telugu]" tvg-logo="" group-title="Movies / Telugu",Irumudi DVDScr [Telugu]
-https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FM0grd0tpT0pZT2dHVEkvVDk5TENLZz09%2FxfgdYshjhYhj%3D%21sdsHsyG
-#EXTINF:-1 tvg-name="Makutam DVDScr [Telugu]" tvg-logo="" group-title="Movies / Telugu",Makutam DVDScr [Telugu]
+#EXTINF:-1 tvg-name="Jana Nayagan" tvg-logo="https://www.5movierulz.watch/uploads/Jana-Nayagan-Kannada.jpg" group-title="Movies / Kannada",Jana Nayagan
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FVXZRMUs1WnZ3SzZWdElnRkM4QjFGZz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Makutam" tvg-logo="https://www.5movierulz.watch/uploads/Makutam-Telugu.jpg" group-title="Movies / Telugu",Makutam
 https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FYmd1Z1ZiU3dOVlRiNGVqMHJuTG93QT09%2FxfgdYshjhYhj%3D%21sdsHsyG
-#EXTINF:-1 tvg-name="Lenin HDRip [Hindi]" tvg-logo="" group-title="Movies / Hindi",Lenin HDRip [Hindi]
+#EXTINF:-1 tvg-name="Lenin" tvg-logo="https://www.5movierulz.watch/uploads/Lenin-Hindi.jpg" group-title="Movies / Hindi",Lenin
 https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FVEMvcGVqWXd1UXU0dWFVMlNJL0NCQT09%2FxfgdYshjhYhj%3D%21sdsHsyG
-#EXTINF:-1 tvg-name="Sanjeev HDRip [Telugu]" tvg-logo="" group-title="Movies / Telugu", Sanjeev HDRip [Telugu]
+#EXTINF:-1 tvg-name="Insidious Out Of The Further" tvg-logo="https://www.5movierulz.watch/uploads/Insidious-Out-of-the-Further-Telugu.jpg" group-title="Movies / Telugu",Insidious Out Of The Further
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FNTdUY3lCeXIzd3pLZURtdCtDRC9XQT09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Jana Nayakudu" tvg-logo="https://www.5movierulz.watch/uploads/Jana-Nayakudu-Telugu.jpg" group-title="Movies / Telugu",Jana Nayakudu
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FWVd2RjB5T3REWExMdE9qcFFxWk1kZz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Chennai Love Story" tvg-logo="https://www.5movierulz.watch/uploads/Chennai-Love-Story-Telugu-1.jpg" group-title="Movies / Telugu",Chennai Love Story
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FR2VCUFRycW1ha1N3S1NIZ0w4RllIQT09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Bury The Devil" tvg-logo="https://www.5movierulz.watch/uploads/Bury-the-Devil-Telugu.jpg" group-title="Movies / Telugu",Bury The Devil
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FRUNUZjVNVW5jSzBpdUdBd2VhWEUzQT09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Pagida Kali" tvg-logo="https://www.5movierulz.watch/uploads/Pagida-Kali-Malayalam.jpg" group-title="Movies / Malayalam",Pagida Kali
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FL1pYaUQwbXdUVXJMc3BKdktzOUNsZz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Welcome To The Jungle" tvg-logo="https://www.5movierulz.watch/uploads/Welcome-to-the-Jungle-Hindi.jpg" group-title="Movies / Hindi",Welcome To The Jungle
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FODNKZGxDVmYxTHpPVXRJa2hZOFJSQT09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="The Great Grand Superhero" tvg-logo="https://www.5movierulz.watch/uploads/The-Great-Grand-Superhero-Hindi.jpg" group-title="Movies / Hindi",The Great Grand Superhero
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FVTF2YnVMSUxZUGlxeUxjejN6cVgvQT09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Ghost In The Shell" tvg-logo="https://www.5movierulz.watch/uploads/Ghost-in-the-Shell-Telugu.jpg" group-title="Movies / Telugu",Ghost In The Shell
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FMGNuVU9STTVjdjlTa2ROMGJlYitydz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Irumudi" tvg-logo="https://www.5movierulz.watch/uploads/Irumudi-Telugu.jpg" group-title="Movies / Telugu",Irumudi
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FM0grd0tpT0pZT2dHVEkvVDk5TENLZz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Pyaar Prema Kalyanam" tvg-logo="https://www.5movierulz.watch/uploads/Pyaar-Prema-Kalyanam-Tamil.jpg" group-title="Movies / Tamil",Pyaar Prema Kalyanam
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FMnROdXlWYTJuVHpXSGlGNXI0ZU5kUT09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Raja The Raja" tvg-logo="https://www.5movierulz.watch/uploads/Raja-the-Raja-Telugu.jpg" group-title="Movies / Telugu",Raja The Raja
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FcUppMUo0bkFTYzZPdW5oZnl2d0dFUT09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Sanjeev" tvg-logo="https://www.5movierulz.watch/uploads/Sanjeev-Telugu.jpg" group-title="Movies / Telugu",Sanjeev
 https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FNU1rY2tydnl5a0ZnL3dhbkxyZWxyQT09%2FxfgdYshjhYhj%3D%21sdsHsyG
-#EXTINF:-1 tvg-name="Dark HDRip [Tamil]" tvg-logo="" group-title="Movies / Tamil",Dark HDRip [Tamil]
+#EXTINF:-1 tvg-name="Chennai Love Story" tvg-logo="https://www.5movierulz.watch/uploads/Chennai-Love-Story-Hindi.jpg" group-title="Movies / Hindi",Chennai Love Story
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FbnB3RHRwaEpJVHBoVCtCVmplVGVEdz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Dark" tvg-logo="https://www.5movierulz.watch/uploads/Dark-Tamil.jpg" group-title="Movies / Tamil",Dark
 https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FamRDMlFFOXMvcjRra2VmemZVY2JYUT09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Vishwanath And Sons" tvg-logo="https://www.5movierulz.watch/uploads/Vishwanath-and-Sons-Telugu.jpg" group-title="Movies / Telugu",Vishwanath And Sons
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FbGRxb3pJTUFkNldBdnFiRlRuVTQrQT09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Pyaar Prema Kalyanam" tvg-logo="https://www.5movierulz.watch/uploads/Pyaar-Prema-Kalyanam-Telugu.jpg" group-title="Movies / Telugu",Pyaar Prema Kalyanam
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FQmE3b2ZvcTNhZGxxKzZZbXlWdnBGQT09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Chennai Love Story" tvg-logo="https://www.5movierulz.watch/uploads/Chennai-Love-Story-Tamil.jpg" group-title="Movies / Tamil",Chennai Love Story
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FUklKbWtkMTRNeGdnVklVVXQxVThBUT09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Pallichattambi" tvg-logo="https://www.5movierulz.watch/uploads/Pallichattambi-Malayalam.jpg" group-title="Movies / Malayalam",Pallichattambi
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FYXNIRENWWHp4NGtFdGhrYkxDMEJpdz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Euphoria" tvg-logo="https://www.5movierulz.watch/uploads/Euphoria-Tamil.jpg" group-title="Movies / Tamil",Euphoria
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FU0U2Szg1L3RJVkd1Ni9UQVBQUVdOQT09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Pallichattambi" tvg-logo="https://www.5movierulz.watch/uploads/Pallichattambi-Tamil.jpg" group-title="Movies / Tamil",Pallichattambi
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FanEyVkhnRGJiczBrbS95bzBqbE1Jdz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Anomie" tvg-logo="https://www.5movierulz.watch/uploads/Anomie-Malayalam.jpg" group-title="Movies / Malayalam",Anomie
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FQVBkelo4NzgyRzFsT0R6SU4vbjVGUT09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="The Odyssey" tvg-logo="https://www.5movierulz.watch/uploads/The-Odyssey-Telugu.jpg" group-title="Movies / Telugu",The Odyssey
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FeDUzSjdXSmVHOTVRTTNLQ2NHWWxBdz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Ek Din" tvg-logo="https://www.5movierulz.watch/uploads/Ek-Din-Hindi.jpg" group-title="Movies / Hindi",Ek Din
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FcWt5RFpsczJkNVpLSURVZHY4NktBZz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Rajathandhiram" tvg-logo="https://www.5movierulz.watch/uploads/Rajathandhiram-Tamil.jpg" group-title="Movies / Tamil",Rajathandhiram
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2Fby9LdTZWVEQyVHV4MjJsOWFKWktMZz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Masters Of The Universe" tvg-logo="https://www.5movierulz.watch/uploads/Masters-of-the-Universe-Telugu-1.jpg" group-title="Movies / Telugu",Masters Of The Universe
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FYVJlbHNMeXMvcUppekZ1NjlwRGhTZz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Pallichattambi" tvg-logo="https://www.5movierulz.watch/uploads/Pallichattambi-Telugu.jpg" group-title="Movies / Telugu",Pallichattambi
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FbFpWZzlDaWplVHZZamdYaHFqU0tydz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Con City" tvg-logo="https://www.5movierulz.watch/uploads/Con-City-Telugu.jpg" group-title="Movies / Telugu",Con City
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FUTNRaDNJdnFGZE9DN05kM0ZFNkhvdz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Shark Warning" tvg-logo="https://www.5movierulz.watch/uploads/Shark-Warning-Tamil.jpg" group-title="Movies / Tamil",Shark Warning
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FNVBKaXdxeEk3MVdCU1BRTm93ZjVRdz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Nagabandham" tvg-logo="https://www.5movierulz.watch/uploads/Nagabandham-Telugu-1.jpg" group-title="Movies / Telugu",Nagabandham
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FVndtUkFLTTVqT1g4SkZXM1JIRkV1QT09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Jana Nayagan" tvg-logo="https://www.5movierulz.watch/uploads/Jana-Nayagan-Tamil.jpg" group-title="Movies / Tamil",Jana Nayagan
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2Fdm5YSUZ4VnozbUdBOW5jT0lLZzRhZz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Secret Of Kalinga" tvg-logo="https://www.5movierulz.watch/uploads/Secret-of-Kalinga-Malayalam.jpg" group-title="Movies / Malayalam",Secret Of Kalinga
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FOHlNaFgvZDVrWXB3Vmt2OVFTY0hQUT09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Ego Raman" tvg-logo="https://www.5movierulz.watch/uploads/Ego-Raman-Tamil.jpg" group-title="Movies / Tamil",Ego Raman
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FMVBTckg4cGdPMmcrTXpJYUR1L0wrdz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Hijack" tvg-logo="https://www.5movierulz.watch/uploads/Hijack-1971-Telugu.jpg" group-title="Movies / Telugu",Hijack
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FOVc2bG5oT244L2hqVm5vTGRaMGtRUT09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Kamal Sridevi" tvg-logo="https://www.5movierulz.watch/uploads/Kamal-Sridevi-Kannada.jpg" group-title="Movies / Kannada",Kamal Sridevi
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FNFZlUXlaK3lyaDBlTjgwRUpjaUtzQT09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Sannidhanam Po" tvg-logo="https://www.5movierulz.watch/uploads/Sannidhanam-P.O.-Tamil.jpg" group-title="Movies / Tamil",Sannidhanam Po
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FbmdmbEJaZHg1cURLRm5sUkxyZ3ljdz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Desert Warrior" tvg-logo="https://www.5movierulz.watch/uploads/Desert-Warrior-Telugu.jpg" group-title="Movies / Telugu",Desert Warrior
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FenB3R2xtSVdveDQraHlaRXA1NldVdz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="13 Days 13 Nights 2025 Brrip Telugu Dubbed 7206" tvg-logo="https://www.5movierulz.watch/uploads/13-Days-13-Nights-Telugu.jpg" group-title="Movies / Telugu",13 Days 13 Nights 2025 Brrip Telugu Dubbed 7206
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FU3lHaVRuSE5ETFIyRzg4QlJKVU5uQT09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Chithini" tvg-logo="https://www.5movierulz.watch/uploads/Chithini-Malayalam.jpg" group-title="Movies / Malayalam",Chithini
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FWWpaNWwwM3VITlhDRUZQNWJFN01zdz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Vowels" tvg-logo="https://www.5movierulz.watch/uploads/Vowels-Tamil.jpg" group-title="Movies / Tamil",Vowels
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FL3U5c3UxeFRFb256Q2ZKcDJlYmRHQT09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="23 000 Lives 2026 Hdrip Telugu Dubbed 7205" tvg-logo="https://www.5movierulz.watch/uploads/23-000-Lives-Telugu.jpg" group-title="Movies / Telugu",23 000 Lives 2026 Hdrip Telugu Dubbed 7205
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FU3lHaVRuSE5ETFIyRzg4QlJKVU5uQT09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Engal Thangam" tvg-logo="https://www.5movierulz.watch/uploads/Engal-Thangam-Tamil.jpg" group-title="Movies / Tamil",Engal Thangam
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FNVdtTHlESlFEaDhPY1NTWDRYeDZ5Zz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Hrudhayam Murali" tvg-logo="https://www.5movierulz.watch/uploads/Hrudhayam-Murali-Telugu.jpg" group-title="Movies / Telugu",Hrudhayam Murali
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2Fd00wcjdudDFHQnJRWXZOOGFWTkxXZz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="The Devil" tvg-logo="https://www.5movierulz.watch/uploads/The-Devil-Kannada.jpg" group-title="Movies / Kannada",The Devil
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FNWlIVDY0UzRYOTdaMEVvL0IwU3N2Zz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Ek Din" tvg-logo="https://www.5movierulz.watch/uploads/Ek-Din-Tamil.jpg" group-title="Movies / Tamil",Ek Din
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FYmcxY0RONlBxZW9BT1A1N3JvU2Qrdz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Thiraivi" tvg-logo="https://www.5movierulz.watch/uploads/Thiraivi-Tamil.jpg" group-title="Movies / Tamil",Thiraivi
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FaGlSOFRIdU4rbGJsWDMzNnV3QU4xdz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Razor" tvg-logo="https://www.5movierulz.watch/uploads/Razor-Tamil.jpg" group-title="Movies / Tamil",Razor
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FZVo1TGptZHZtNDhuQUZXVThqOFhYQT09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Maa Inti Bangaaram" tvg-logo="https://www.5movierulz.watch/uploads/Maa-Inti-Bangaaram-Malayalam.jpg" group-title="Movies / Malayalam",Maa Inti Bangaaram
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FSDNKbEErVjFCZEZkcUpPelI3KzlYdz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+
+
+#EXTINF:-1 tvg-name="Gedelaraju Kakinada Taluka" tvg-logo="https://www.5movierulz.watch/uploads/Gedelaraju-Kakinada-Taluka-Telugu.jpg" group-title="Movies / Telugu",Gedelaraju Kakinada Taluka
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FSE5HZUxjbGJiQkNWd1l3R3BscGRmdz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Transfer Trimurthulu" tvg-logo="https://www.5movierulz.watch/uploads/Transfer-Trimurthulu-Telugu.jpg" group-title="Movies / Telugu",Transfer Trimurthulu
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FczU4UkdSNXczblh3UDh0bjBEZStDdz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Ek Din" tvg-logo="https://www.5movierulz.watch/uploads/Ek-Din-Telugu-1.jpg" group-title="Movies / Telugu",Ek Din
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FQ0VjT2pEMGlSN29Maml1SDlWNGgyQT09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Ikka" tvg-logo="https://www.5movierulz.watch/uploads/Ikka-Telugu.jpg" group-title="Movies / Telugu",Ikka
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FSm1hYnJFM0RxRXdoZ1EyNVIzVlNJdz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Shikhandi" tvg-logo="https://www.5movierulz.watch/uploads/Shikhandi-Kannada.jpg" group-title="Movies / Kannada",Shikhandi
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FNHRxTEVodmtVRTlMWFNOYjZVMlZpUT09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Maa Inti Bangaaram" tvg-logo="https://www.5movierulz.watch/uploads/Maa-Inti-Bangaaram-Telugu-1.jpg" group-title="Movies / Telugu",Maa Inti Bangaaram
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FWXF5MlJlRGdiVnVQNFdhNk5JdEo3dz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Parimala And Co" tvg-logo="https://www.5movierulz.watch/uploads/Parimala-and-Co-Malayalam.jpg" group-title="Movies / Malayalam",Parimala And Co
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FVC9mSHAxTWlpVEJhcFY1T3BFa2h1dz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Dhamaal" tvg-logo="https://www.5movierulz.watch/uploads/Dhamaal-4-Hindi.jpg" group-title="Movies / Hindi",Dhamaal
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FdVVNcGZuenNXcFVvc1Rzc3JPekQzQT09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Arctic Armageddon" tvg-logo="https://www.5movierulz.watch/uploads/Arctic-Armageddon-Tamil.jpg" group-title="Movies / Tamil",Arctic Armageddon
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FcjAwc3dZc0lpc3p5eFo0S0tYdDV2UT09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Tholaivil Oru Kadhal" tvg-logo="https://www.5movierulz.watch/uploads/Tholaivil-Oru-Kadhal-Tamil.jpg" group-title="Movies / Tamil",Tholaivil Oru Kadhal
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FYi9IWFAvbkJzNVRUNmVzZlJ4VkVxUT09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Hollow Man" tvg-logo="https://www.5movierulz.watch/uploads/Hollow-Man-2-Telugu.jpg" group-title="Movies / Telugu",Hollow Man
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FamttMFBSQjVRUmROdTRBeDM5aDcyZz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="The Trip" tvg-logo="https://www.5movierulz.watch/uploads/The-Trip-Telugu.jpg" group-title="Movies / Telugu",The Trip
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FSVh0T0gxWWk3TXpVOUJtZGZ0QTdCUT09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Mukhbir The Story Of A Spy" tvg-logo="https://www.5movierulz.watch/uploads/Mukhbir-The-Story-of-a-Spy-Telugu.jpg" group-title="Movies / Telugu",Mukhbir The Story Of A Spy
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FelJPMGxUZUNpTXJUeXpWbjZsOVd0QT09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Only The Brave" tvg-logo="https://www.5movierulz.watch/uploads/Only-the-Brave-Telugu.jpg" group-title="Movies / Telugu",Only The Brave
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FVmxhYzA1aGhaMXZiZ0MzRDNzRG9QQT09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Peter" tvg-logo="https://www.5movierulz.watch/uploads/Peter-Tamil.jpg" group-title="Movies / Tamil",Peter
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FdWVleG12ajlZRjlVck5ld2l5TE9Ydz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Razor" tvg-logo="https://www.5movierulz.watch/uploads/Razor-Kannada.jpg" group-title="Movies / Kannada",Razor
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FaldzOEpYTEFzWXlhZnNodW1NOEt6QT09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Backrooms" tvg-logo="https://www.5movierulz.watch/uploads/Backrooms-English.jpg" group-title="Movies / English",Backrooms
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FdHZjVjBOZlF5MnI1UjlLYzBsTHdhUT09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Peddi" tvg-logo="https://www.5movierulz.watch/uploads/Peddi-Kannada.jpg" group-title="Movies / Kannada",Peddi
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FTW5ybHV2dExHTGc3c3dJemRpQ2x6Zz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Pati Patni Aur Woh Do" tvg-logo="https://www.5movierulz.watch/uploads/Pati-Patni-Aur-Woh-Do-Hindi.jpg" group-title="Movies / Hindi",Pati Patni Aur Woh Do
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FOWp6Z3pnNFptdXFZWVg2cVhhWGs5UT09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Peddi" tvg-logo="https://www.5movierulz.watch/uploads/Peddi-Tamil.jpg" group-title="Movies / Tamil",Peddi
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FRENGS2lPdlQxbloycHQ3d0F3Zi9xQT09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Dose" tvg-logo="https://www.5movierulz.watch/uploads/Dose-Telugu.jpg" group-title="Movies / Telugu",Dose
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FQjZHMGlrcjEzTHNYYjR5Wk8rYnphQT09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Trikala Script Of God" tvg-logo="https://www.5movierulz.watch/uploads/Trikala-Script-of-God-Telugu.jpg" group-title="Movies / Telugu",Trikala Script Of God
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FKzVzTGEzd3NxcnZ0VmU3T1NrWFRBZz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Peddi" tvg-logo="https://www.5movierulz.watch/uploads/Peddi-Malayalam.jpg" group-title="Movies / Malayalam",Peddi
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FOCtqNld3VDIraVdWN1FmK0xKOWk0UT09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Double Occupancy" tvg-logo="https://www.5movierulz.watch/uploads/Double-Occupancy-Telugu.jpg" group-title="Movies / Telugu",Double Occupancy
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FVC9IMU9CZVBsNUlPRmNCWXdUbHJPUT09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Double Occupancy" tvg-logo="https://www.5movierulz.watch/uploads/Double-Occupancy-Tamil.jpg" group-title="Movies / Tamil",Double Occupancy
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FT1UxSGRFMmZEc2d1Q3dhT0t5WnEwUT09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Balti" tvg-logo="https://www.5movierulz.watch/uploads/Balti-Telugu.jpg" group-title="Movies / Telugu",Balti
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FVTFZeXBKaVN5aDduOGZBYlhqUjVuQT09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Parimala And Co" tvg-logo="https://www.5movierulz.watch/uploads/Parimala-and-Co-Tamil.jpg" group-title="Movies / Tamil",Parimala And Co
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FU3ExOGtYUzVUbE5FQXd2a1J4SUhZQT09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Peddi" tvg-logo="https://www.5movierulz.watch/uploads/Peddi-Telugu.jpg" group-title="Movies / Telugu",Peddi
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FZjZYY1Mrc2ErUkR2VGtxTEZvd2VpZz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Trikala Script Of God" tvg-logo="https://www.5movierulz.watch/uploads/Trikala-Script-of-God-Tamil.jpg" group-title="Movies / Tamil",Trikala Script Of God
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FRlBHSm1tRGpXUzhxNm1CNVFmU1FxZz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Dose" tvg-logo="https://www.5movierulz.watch/uploads/Dose-Malayalam.jpg" group-title="Movies / Malayalam",Dose
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FcWpYMEMzQ25sZ09QekhuODF3ZjlHZz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Parimala And Co" tvg-logo="https://www.5movierulz.watch/uploads/Parimala-and-Co-Telugu.jpg" group-title="Movies / Telugu",Parimala And Co
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2Fc1F2dzBVV3pMRlVJQXJlaGxQWXBkQT09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Balti" tvg-logo="https://www.5movierulz.watch/uploads/Balti-Tamil.jpg" group-title="Movies / Tamil",Balti
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FL2N4RXo1MHZoUEJoT2NnNjhKSHRrdz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="The Furious" tvg-logo="https://www.5movierulz.watch/uploads/The-Furious-English.jpg" group-title="Movies / English",The Furious
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FWHJ4S1Ixc0VTOHFLRTFLWG5hTUFNdz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Sing Geetham" tvg-logo="https://www.5movierulz.watch/uploads/Sing-Geetham-Hindi.jpg" group-title="Movies / Hindi",Sing Geetham
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FZHBZQVB0YXBXNlRsaG9xOG83eGtjUT09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Sing Geetham" tvg-logo="https://www.5movierulz.watch/uploads/Sing-Geetham-Tamil.jpg" group-title="Movies / Tamil",Sing Geetham
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FSkFlVDNOTnFKcjRLNnlhY1d6OUVEQT09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Sing Geetham" tvg-logo="https://www.5movierulz.watch/uploads/Sing-Geetham-Telugu-1.jpg" group-title="Movies / Telugu",Sing Geetham
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FL3FpWlhQYjAxTWxmTmttb21vYWZkdz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Kadhal Oru Kannamoochi" tvg-logo="https://www.5movierulz.watch/uploads/Kadhal-Oru-Kannamoochi-Tamil.jpg" group-title="Movies / Tamil",Kadhal Oru Kannamoochi
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FOGF4Tmk0bVhnTnJ4bGlhVGVGdHhCZz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Kotha Malupu" tvg-logo="https://www.5movierulz.watch/uploads/Kotha-Malupu-Telugu.jpg" group-title="Movies / Telugu",Kotha Malupu
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FU0lCYk1qdTdQUzY4K0ExSU54M1JPUT09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Alpha" tvg-logo="https://www.5movierulz.watch/uploads/Alpha-Hindi.jpg" group-title="Movies / Hindi",Alpha
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FOUdwa3BHcjdxeUNNdmVOakIxUHNpdz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Maruvasham" tvg-logo="https://www.5movierulz.watch/uploads/Maruvasham-Malayalam.jpg" group-title="Movies / Malayalam",Maruvasham
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FQzFhV2ZsMUw0dmFJM1FXYm9lc3ErZz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Bait" tvg-logo="https://www.5movierulz.watch/uploads/Bait-Telugu.jpg" group-title="Movies / Telugu",Bait
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FZVRmVkVRUjU0dHBZbDMvUm5IQ250QT09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Shiver Me Timbers" tvg-logo="https://www.5movierulz.watch/uploads/Shiver-Me-Timbers-Tamil.jpg" group-title="Movies / Tamil",Shiver Me Timbers
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FNVBPT3doQ2dMZURweWZobytzRUZ5UT09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Nothing To Lose" tvg-logo="https://www.5movierulz.watch/uploads/Nothing-to-Lose-Telugu.jpg" group-title="Movies / Telugu",Nothing To Lose
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2Fd0lUTTRjM3hvd3JVLzIrUmhEZDFmZz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Donnie Brasco" tvg-logo="https://www.5movierulz.watch/uploads/Donnie-Brasco-Telugu.jpg" group-title="Movies / Telugu",Donnie Brasco
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FZnhsYVJuS0dNcktJd3Z6VUlya2xKdz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Double Barrel" tvg-logo="https://www.5movierulz.watch/uploads/Double-Barrel-Telugu.jpg" group-title="Movies / Telugu",Double Barrel
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FVlNsUmtmN3UzSlFMWFRNVFptbndPZz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Charukesi" tvg-logo="https://www.5movierulz.watch/uploads/Charukesi-Tamil.jpg" group-title="Movies / Tamil",Charukesi
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FVDF2Wm9FZjZzTTBJMEhNVWNEOHdkZz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Chand Mera Dil" tvg-logo="https://www.5movierulz.watch/uploads/Chand-Mera-Dil-Hindi.jpg" group-title="Movies / Hindi",Chand Mera Dil
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FSHFXK1pUc3ozM0RoTFc5bTU3UUNLZz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Mollywood Times" tvg-logo="https://www.5movierulz.watch/uploads/Mollywood-Times-Tamil.jpg" group-title="Movies / Tamil",Mollywood Times
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FWGpTVW1yUGpwVzN5Z2l3YkNGZ1I2dz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+
+
+#EXTINF:-1 tvg-name="Elra Kaaleliyatte Kaala" tvg-logo="https://www.5movierulz.watch/uploads/Elra-Kaaleliyatte-Kaala-Kannada.jpg" group-title="Movies / Kannada",Elra Kaaleliyatte Kaala
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FN0pPOFhEdTE2S1VaK0kzMjAvV1FFQT09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Karakkam" tvg-logo="https://www.5movierulz.watch/uploads/Karakkam-Malayalam.jpg" group-title="Movies / Malayalam",Karakkam
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FWHIrN2srMTZJeWxINkprNlM1ZXd2Zz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Karakkam" tvg-logo="https://www.5movierulz.watch/uploads/Karakkam-Tamil.jpg" group-title="Movies / Tamil",Karakkam
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FZTBNWUMrVDVSOEU0eVNJY1QzaXVFZz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Enola Holmes" tvg-logo="https://www.5movierulz.watch/uploads/Enola-Holmes-3-Telugu.jpg" group-title="Movies / Telugu",Enola Holmes
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FSGkrYUgvNVZwbVJMTkQxb3dBdkoxZz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Mollywood Times" tvg-logo="https://www.5movierulz.watch/uploads/Mollywood-Times-Telugu.jpg" group-title="Movies / Telugu",Mollywood Times
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FeCtrV0VZTjQ3UkRvMGtZUFp1cGgvZz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Obsession" tvg-logo="https://www.5movierulz.watch/uploads/Obsession-English.jpg" group-title="Movies / English",Obsession
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FOVZ1ZnkySDcyY1BpNDVsOVFScGdoZz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Mollywood Times" tvg-logo="https://www.5movierulz.watch/uploads/Mollywood-Times-Malayalam.jpg" group-title="Movies / Malayalam",Mollywood Times
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FTDlLMWxzYndVc2RBYjNPY1o5TlkwQT09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Hangman" tvg-logo="https://www.5movierulz.watch/uploads/Hangman-Telugu.jpg" group-title="Movies / Telugu",Hangman
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FMlhBNTY3MGhONE5ZTjhzNjY3Qk9Edz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Daadi Ki Shaadi" tvg-logo="https://www.5movierulz.watch/uploads/Daadi-Ki-Shaadi-Hindi.jpg" group-title="Movies / Hindi",Daadi Ki Shaadi
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FTnZwQmUyMU45ckdjOGoxTGZqcmlldz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Super Subbu Season" tvg-logo="https://www.5movierulz.watch/uploads/Super-Subbu-Season-1-Telugu.jpg" group-title="Movies / Telugu",Super Subbu Season
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FNGZYNXJ4dzE2NjhkcEJBOEZiVnFhdz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Isakapatnam Season" tvg-logo="https://www.5movierulz.watch/uploads/Isakapatnam-Season-1-Telugu.jpg" group-title="Movies / Telugu",Isakapatnam Season
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FSGFjVUhaNy9TM0ZhL2VGejhHbTd2QT09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Karakkam" tvg-logo="https://www.5movierulz.watch/uploads/Karakkam-Telugu.jpg" group-title="Movies / Telugu",Karakkam
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FV3VmZWFyMFRlcDhqV2luSDA2L2FoZz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="The Last Breath" tvg-logo="https://www.5movierulz.watch/uploads/The-Last-Breath-Telugu.jpg" group-title="Movies / Telugu",The Last Breath
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FUmJscVVTRHBIMzRURkVkUUpxTFczQT09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Great White Waters" tvg-logo="https://www.5movierulz.watch/uploads/Great-White-Waters-Tamil.jpg" group-title="Movies / Tamil",Great White Waters
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FaXQ2eWZoWWl0R1NldWVkOE42ODc3UT09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Blast Zone" tvg-logo="https://www.5movierulz.watch/uploads/Blast-Zone-Malayalam.jpg" group-title="Movies / Malayalam",Blast Zone
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FcVZGaTV1WldnOFViZXVxNXpXYlo2QT09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Blast Zone" tvg-logo="https://www.5movierulz.watch/uploads/Blast-Zone-Telugu.jpg" group-title="Movies / Telugu",Blast Zone
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FZ292MU9LczJjNEhwQldrVWd6UW16dz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="The Yeti" tvg-logo="https://www.5movierulz.watch/uploads/The-Yeti-Telugu.jpg" group-title="Movies / Telugu",The Yeti
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FQlFFcHIzRFhVRVpWK0RBQ1VHRHRxdz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="In The Hand Of Dante" tvg-logo="https://www.5movierulz.watch/uploads/In-the-Hand-of-Dante-Telugu.jpg" group-title="Movies / Telugu",In The Hand Of Dante
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FRjNzUDQzY2ttVmZPN0d2enlmV0I5UT09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Blast" tvg-logo="https://www.5movierulz.watch/uploads/Blast-Tamil.jpg" group-title="Movies / Tamil",Blast
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2Fa2ZFdDBjSXRxTk8yREhINVp2THdZdz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Continental Split" tvg-logo="https://www.5movierulz.watch/uploads/Continental-Split-Tamil.jpg" group-title="Movies / Tamil",Continental Split
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FV01ZdlpJRFBpVkRCdGZieHZWVmFwQT09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Revolver Rinko" tvg-logo="https://www.5movierulz.watch/uploads/Revolver-Rinko-Malayalam.jpg" group-title="Movies / Malayalam",Revolver Rinko
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FamsvMVNRRGdKV2tUNTJ5QStIU0RBUT09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Little Brother" tvg-logo="https://www.5movierulz.watch/uploads/Little-Brother-Telugu.jpg" group-title="Movies / Telugu",Little Brother
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FT05BMk9CRVlFZ0dadTIyaHpsNlBPdz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Road Wars Max Fury" tvg-logo="https://www.5movierulz.watch/uploads/Road-Wars-Max-Fury-Tamil.jpg" group-title="Movies / Tamil",Road Wars Max Fury
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FVUdXUi9zdHZVVEtiaHNzSlM5M0VUZz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Raja Shivaji" tvg-logo="https://www.5movierulz.watch/uploads/Raja-Shivaji-Hindi.jpg" group-title="Movies / Hindi",Raja Shivaji
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FMGhnZExhV1ZIeEkyR2RvVFlUZVgrdz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Moondram Kan" tvg-logo="https://www.5movierulz.watch/uploads/Moondram-Kan-Tamil.jpg" group-title="Movies / Tamil",Moondram Kan
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FaFZBNW9qbDlHbE9KSkpjeDkvSW85dz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Dooradarshini" tvg-logo="https://www.5movierulz.watch/uploads/Dooradarshini-Telugu.jpg" group-title="Movies / Telugu",Dooradarshini
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FOGtNcEJsZnFaMTBtVnQ1VUNBaURmQT09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Avatar Fire And Ash" tvg-logo="https://www.5movierulz.watch/uploads/Avatar-Fire-and-Ash-Telugu-2.jpg" group-title="Movies / Telugu",Avatar Fire And Ash
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FZ3V6VkV3bFVua01razZZSCtLeVhFQT09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Voicemails For Isabelle" tvg-logo="https://www.5movierulz.watch/uploads/Voicemails-for-Isabelle-Telugu.jpg" group-title="Movies / Telugu",Voicemails For Isabelle
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FNkk5RjJBVUdJRFNGSDAwV1hnTG9GZz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Gladiator Underground" tvg-logo="https://www.5movierulz.watch/uploads/Gladiator-Underground-Telugu.jpg" group-title="Movies / Telugu",Gladiator Underground
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FZkZJVkszTjhmWG4zZkR4dWdMRXRmdz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Anali" tvg-logo="https://www.5movierulz.watch/uploads/Anali-Telugu.jpg" group-title="Movies / Telugu",Anali
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FYjNBeTN3Wnk0UTFCdHRuU2VHRXduUT09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Breakfast" tvg-logo="https://www.5movierulz.watch/uploads/Breakfast-Telugu.jpg" group-title="Movies / Telugu",Breakfast
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FODRWRU0wTStWRndMUXhkdEpnSkJDQT09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Breakfast" tvg-logo="https://www.5movierulz.watch/uploads/Breakfast-Tamil.jpg" group-title="Movies / Tamil",Breakfast
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FY2tQSmEyOWgvZjRrcmNuQkFzVUZzZz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="The Sheep Detectives" tvg-logo="https://www.5movierulz.watch/uploads/The-Sheep-Detectives-Telugu.jpg" group-title="Movies / Telugu",The Sheep Detectives
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2Fd3g1dDI5RHVLSmdxbXRzWlVneWtQUT09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="The Furies" tvg-logo="https://www.5movierulz.watch/uploads/The-Furies-Tamil.jpg" group-title="Movies / Tamil",The Furies
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2Fa21sYldpRG8yQWNJcHF0S01uL2VsUT09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Anali" tvg-logo="https://www.5movierulz.watch/uploads/Anali-Tamil.jpg" group-title="Movies / Tamil",Anali
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FZ2lZRE5qZFc4OHZwbzBBZW1PKzNsUT09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="M4M Motive For Murder" tvg-logo="https://www.5movierulz.watch/uploads/M4M-Motive-for-Murder-Telugu-1.jpg" group-title="Movies / Telugu",M4M Motive For Murder
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FdFd2czdRTVJvTmliYkR5VGR2Wmo1QT09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Blind Waters" tvg-logo="https://www.5movierulz.watch/uploads/Blind-Waters-Tamil.jpg" group-title="Movies / Tamil",Blind Waters
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FYnlMMHhpSURnSWpldkZNV2NGNVdDZz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Painkili" tvg-logo="https://www.5movierulz.watch/uploads/Painkili-Tamil.jpg" group-title="Movies / Tamil",Painkili
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FaEl4ZjFhSTFRekgvNC8wcWt4WXJTQT09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Razor" tvg-logo="https://www.5movierulz.watch/uploads/Razor-Telugu.jpg" group-title="Movies / Telugu",Razor
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FeWxJaXJRaG5rdG1XVjhOSWhZNmhJZz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Seems Like Old Times" tvg-logo="https://www.5movierulz.watch/uploads/Seems-Like-Old-Times-Telugu.jpg" group-title="Movies / Telugu",Seems Like Old Times
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2Fb2RHZlFXOFhVNTJnRFRkaGpBUnVJdz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Garbham" tvg-logo="https://www.5movierulz.watch/uploads/Garbham-Telugu.jpg" group-title="Movies / Telugu",Garbham
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FTWpwZ2thc3hYRnFVekhPU2pEaUlyUT09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Husbands In Action" tvg-logo="https://www.5movierulz.watch/uploads/Husbands-in-Action-Telugu.jpg" group-title="Movies / Telugu",Husbands In Action
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FeGNsN09hY3ovQ3NLZFd1S2hUYlZsQT09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Mareechika" tvg-logo="https://www.5movierulz.watch/uploads/Mareechika-Tamil.jpg" group-title="Movies / Tamil",Mareechika
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FNElwSGlsVnpNNWZGdnk4NEI2bU5nZz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Mortal Kombat" tvg-logo="https://www.5movierulz.watch/uploads/Mortal-Kombat-2-Telugu-2.jpg" group-title="Movies / Telugu",Mortal Kombat
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FVExDd1JsRU9QeTIyNGlUejdWb1RPZz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Arco" tvg-logo="https://www.5movierulz.watch/uploads/Arco-Telugu.jpg" group-title="Movies / Telugu",Arco
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FUXhXcnBycDZWQnl5eHVwVExZQzhmdz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Athiradi" tvg-logo="https://www.5movierulz.watch/uploads/Athiradi-Telugu.jpg" group-title="Movies / Telugu",Athiradi
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FNlRjSzdxWmdvQUZJZFA5NndxQWRMdz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Your Fault London" tvg-logo="https://www.5movierulz.watch/uploads/Your-Fault-London-Telugu.jpg" group-title="Movies / Telugu",Your Fault London
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FdXF3R0hyTDA4NVFIcG91clBxVnpLUT09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Gu" tvg-logo="https://www.5movierulz.watch/uploads/Gu-Malayalam.jpg" group-title="Movies / Malayalam",Gu
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FMWFKS1kzZVl5MFRyZ0pEdWt5Ymo2UT09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Kenatha Kanom" tvg-logo="https://www.5movierulz.watch/uploads/Kenatha-Kanom-Telugu.jpg" group-title="Movies / Telugu",Kenatha Kanom
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FMzFlZUFOZjk4TkJEM2FhTDgzdkh4UT09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Drishyam" tvg-logo="https://www.5movierulz.watch/uploads/Drishyam-3-Telugu-1.jpg" group-title="Movies / Telugu",Drishyam
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FMWREeG9aNW8xVk5Jc0dBeGs2Q0ZOdz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Athiradi" tvg-logo="https://www.5movierulz.watch/uploads/Athiradi-Malayalam.jpg" group-title="Movies / Malayalam",Athiradi
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FU3YrSjA4ZXNFcXJOL1p4TU9YVmc3Zz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Drishyam" tvg-logo="https://www.5movierulz.watch/uploads/Drishyam-3-Tamil.jpg" group-title="Movies / Tamil",Drishyam
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FUFVrR0l2dHFmN3RNays5OUtCeWE5Zz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Maiin Haan" tvg-logo="https://www.5movierulz.watch/uploads/Maiin-Haan-Telugu.jpg" group-title="Movies / Telugu",Maiin Haan
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FQ2ozY3JlNjlNZUw4YjlpcnRtOEwyZz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Athiradi" tvg-logo="https://www.5movierulz.watch/uploads/Athiradi-Tamil.jpg" group-title="Movies / Tamil",Athiradi
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FZVNQTkVuVUpSVWRoRnVLNTJoaDJhdz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Mareechika" tvg-logo="https://www.5movierulz.watch/uploads/Mareechika-Telugu.jpg" group-title="Movies / Telugu",Mareechika
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FcDI3bXYrYTVTRDZka2NlclVSbDNPUT09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Drishyam" tvg-logo="https://www.5movierulz.watch/uploads/Drishyam-3-Malayalam.jpg" group-title="Movies / Malayalam",Drishyam
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FaGt6RkxtMXlITEZhQnFHZXBjMytqQT09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="The Grey Men" tvg-logo="https://www.5movierulz.watch/uploads/The-Grey-Men-2-Telugu.jpg" group-title="Movies / Telugu",The Grey Men
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FOUF3RGI3MmhRbTIvZ3lDVG9XQURrdz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Thank You Subbarao" tvg-logo="https://www.5movierulz.watch/uploads/Thank-You-Subbarao-Telugu.jpg" group-title="Movies / Telugu",Thank You Subbarao
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2Fd2NLTzVCTVBvVEc0WkY2UFhBRnpNUT09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Normal" tvg-logo="https://www.5movierulz.watch/uploads/Normal--Malayalam.jpg" group-title="Movies / Malayalam",Normal
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FNGF6aklvV3Y5b1Rmd1Qwa1I3eGlLZz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Ramani Kalyanam" tvg-logo="https://www.5movierulz.watch/uploads/Ramani-Kalyanam-Telugu.jpg" group-title="Movies / Telugu",Ramani Kalyanam
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FVWtMWHpMaWlmV1ppTWpQdjVISS90dz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Dridam" tvg-logo="https://www.5movierulz.watch/uploads/Dridam-Tamil.jpg" group-title="Movies / Tamil",Dridam
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FTEFKYU0zV3pNdFJaeG9iT0VlQUZMdz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Dridam" tvg-logo="https://www.5movierulz.watch/uploads/Dridam-Telugu.jpg" group-title="Movies / Telugu",Dridam
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FVXVqazkydVBFL2FtaUU3am5sL1E1dz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="The Deep" tvg-logo="https://www.5movierulz.watch/uploads/The-Deep-Telugu.jpg" group-title="Movies / Telugu",The Deep
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FZjV0SVVoUFhVVXZVZlB1bGNsN2pOQT09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Kolahalamedu" tvg-logo="https://www.5movierulz.watch/uploads/Kolahalamedu-Malayalam.jpg" group-title="Movies / Malayalam",Kolahalamedu
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2Fb2J4L3FZblZuZFFlQVkrODhMZFkwUT09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Nanu Karunakara" tvg-logo="https://www.5movierulz.watch/uploads/Nanu-Karunakara-Kannada.jpg" group-title="Movies / Kannada",Nanu Karunakara
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FdnZUNWI4cTVZTWZwSkQ2VHEwdEdrZz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Kenatha Kanom" tvg-logo="https://www.5movierulz.watch/uploads/Kenatha-Kanom-Tamil.jpg" group-title="Movies / Tamil",Kenatha Kanom
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FWFNKRFAxTldzRklyWjFpbmNHNG1Jdz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Vikalpa" tvg-logo="https://www.5movierulz.watch/uploads/Vikalpa-Kannada.jpg" group-title="Movies / Kannada",Vikalpa
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FbGNlUXRHdjJNT2tuaXRPWHZIM0dJZz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Seven Years In Tibet" tvg-logo="https://www.5movierulz.watch/uploads/Seven-Years-in-Tibet-Telugu.jpg" group-title="Movies / Telugu",Seven Years In Tibet
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FaHFIUThkelUyS3B5cGE1blZuekszUT09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Bhooth Bangla" tvg-logo="https://www.5movierulz.watch/uploads/Bhooth-Bangla-Hindi-1.jpg" group-title="Movies / Hindi",Bhooth Bangla
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FYTl3QlNlNzZCMHdRcThjZ3N6NlF0dz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Karuppu" tvg-logo="https://www.5movierulz.watch/uploads/Karuppu-Hindi.jpg" group-title="Movies / Hindi",Karuppu
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FNVlvTHhKdGlmTVB3bERNaHJlVFV0Zz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Rl Stines Pumpkinhead" tvg-logo="https://www.5movierulz.watch/uploads/R.L.-Stines-Pumpkinhead-Telugu.jpg" group-title="Movies / Telugu",Rl Stines Pumpkinhead
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FT1I2anZoNk4zdHBvbDZmcGVqQ0RhUT09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Dridam" tvg-logo="https://www.5movierulz.watch/uploads/Dridam-Malayalam.jpg" group-title="Movies / Malayalam",Dridam
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FWWlsVjNEVDNJU2c4dm1DWElUNmY1QT09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Moda Kavida Vatavarana" tvg-logo="https://www.5movierulz.watch/uploads/Moda-Kavida-Vatavarana-Tamil.jpg" group-title="Movies / Tamil",Moda Kavida Vatavarana
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FYUt6QzFWR1N3WkxZL1NienIxSnlaUT09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Insidious The Red Door" tvg-logo="https://www.5movierulz.watch/uploads/Insidious-The-Red-Door-Telugu-1.jpg" group-title="Movies / Telugu",Insidious The Red Door
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FSXFXVzBGd2ZJdFJmSVcxaVhhd3dSZz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Mister Middle Class" tvg-logo="https://www.5movierulz.watch/uploads/Mister-Middle-Class-Telugu-1.jpg" group-title="Movies / Telugu",Mister Middle Class
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FR2tjYnVBUlNIcWhzYjBTRFJXa0tYZz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Agadha" tvg-logo="https://www.5movierulz.watch/uploads/Agadha-Telugu-1.jpg" group-title="Movies / Telugu",Agadha
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FSUVRSkVQNVR4UTlNdVFQZWNxcXU5UT09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Heartin" tvg-logo="https://www.5movierulz.watch/uploads/Heartin-Telugu.jpg" group-title="Movies / Telugu",Heartin
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FdUVQb0syMi9HVFlRQ0dGNG91LzFYUT09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Forest Guard" tvg-logo="https://www.5movierulz.watch/uploads/Forest-Guard-Telugu.jpg" group-title="Movies / Telugu",Forest Guard
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FRjlxTzZIc1M2M1ltMUN0OU45SGJrUT09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Srinivasa Mangapuram" tvg-logo="https://www.5movierulz.watch/uploads/Srinivasa-Mangapuram-Telugu-1.jpg" group-title="Movies / Telugu",Srinivasa Mangapuram
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FUW1jRUc1dGhQdTRQYWwrT3RJTkx5dz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Snake" tvg-logo="https://www.5movierulz.watch/uploads/Snake-5-Monster-City-Telugu.jpg" group-title="Movies / Telugu",Snake
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FYVVmeEx2TzhibVprVG5vZ1g5VHJHZz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Hushar Pittalu" tvg-logo="https://www.5movierulz.watch/uploads/Hushar-Pittalu-Telugu.jpg" group-title="Movies / Telugu",Hushar Pittalu
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FT1hZcDRtYUpEOWlqTEE5YzB2dFZVUT09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Stolen Girl" tvg-logo="https://www.5movierulz.watch/uploads/Stolen-Girl-Telugu.jpg" group-title="Movies / Telugu",Stolen Girl
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FYk1NdXJ4ZFJEaDZHU2lEcVpRTmxxdz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Srinivasa Mangapuram" tvg-logo="https://www.5movierulz.watch/uploads/Srinivasa-Mangapuram-Tamil.jpg" group-title="Movies / Tamil",Srinivasa Mangapuram
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FTXRIU2VlcU9WY2puTlFKc3Jod2dmdz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Aashaan" tvg-logo="https://www.5movierulz.watch/uploads/Aashaan-Malayalam.jpg" group-title="Movies / Malayalam",Aashaan
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FMC90MHprSE1xZkdVTmRqVTB3Qnp4UT09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Anaganaga" tvg-logo="https://www.5movierulz.watch/uploads/Anaganaga-Hindi.jpg" group-title="Movies / Hindi",Anaganaga
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FaDM3TW40WmZ1akNzdVF5Yyt3ODRxQT09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Michael" tvg-logo="https://www.5movierulz.watch/uploads/Michael-English-1.jpg" group-title="Movies / English",Michael
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FMG56Tnp4b3JGUzczcldSSlJsdURjQT09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Kd The Devil" tvg-logo="https://www.5movierulz.watch/uploads/KD-The-Devil-Tamil.jpg" group-title="Movies / Tamil",Kd The Devil
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2Fd2dFdXJjcXB5M2NuRENvNkhuNnVlZz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Shelter" tvg-logo="https://www.5movierulz.watch/uploads/Shelter-Telugu.jpg" group-title="Movies / Telugu",Shelter
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2Fb1BUSUpPNHdQZEFRR2JveHlsazNTZz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Moolyam" tvg-logo="https://www.5movierulz.watch/uploads/Moolyam-Telugu.jpg" group-title="Movies / Telugu",Moolyam
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FeUlTRVVmelFab281WWVSZzJkT28yUT09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Summer House" tvg-logo="https://www.5movierulz.watch/uploads/Summer-House-Telugu.jpg" group-title="Movies / Telugu",Summer House
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FK1ZWcEtXaWM2d1p6eWt5NzhhZmZQdz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="School Chale Hum" tvg-logo="https://www.5movierulz.watch/uploads/School-Chale-Hum-Malayalam.jpg" group-title="Movies / Malayalam",School Chale Hum
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FN2MrVlJMWGxFdytxUTB2eTVQRExXZz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Whistle" tvg-logo="https://www.5movierulz.watch/uploads/Whistle-Telugu.jpg" group-title="Movies / Telugu",Whistle
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FaTFaV1hHZlRSN1BqbDYwK1VvaUh2dz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Cheena Trophy" tvg-logo="https://www.5movierulz.watch/uploads/Cheena-Trophy-Tamil.jpg" group-title="Movies / Tamil",Cheena Trophy
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FRUJOR0FRcnRFSmJHKzhya3dYUGl2QT09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Karuppu" tvg-logo="https://www.5movierulz.watch/uploads/Karuppu-Tamil.jpg" group-title="Movies / Tamil",Karuppu
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FakxyallRSnJnRUM5OFhXSXlianBoZz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Sattendru Maarudhu Vaanilai" tvg-logo="https://www.5movierulz.watch/uploads/Sattendru-Maarudhu-Vaanilai-Telugu.jpg" group-title="Movies / Telugu",Sattendru Maarudhu Vaanilai
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FM3hacE1oT1dnYUVaWjcrOHdtc3NJQT09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Pongala" tvg-logo="https://www.5movierulz.watch/uploads/Pongala-Malayalam.jpg" group-title="Movies / Malayalam",Pongala
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FOFp3VEVBcUw2NmMvWFBQNFQzL3FKdz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Valavaara" tvg-logo="https://www.5movierulz.watch/uploads/Valavaara-Telugu.jpg" group-title="Movies / Telugu",Valavaara
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FSFlUSFFmR3lISWtYZkdKRGtlUkFnQT09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Veerabhadrudu" tvg-logo="https://www.5movierulz.watch/uploads/Veerabhadrudu-Telugu.jpg" group-title="Movies / Telugu",Veerabhadrudu
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FQ0hBYjhLNW5OTkVvd2J6YXU0OWVLUT09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Anaganaga" tvg-logo="https://www.5movierulz.watch/uploads/Anaganaga-Tamil.jpg" group-title="Movies / Tamil",Anaganaga
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FT2ZtRmNwd21IY09UQ0M2czB6SWxmQT09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Patriot" tvg-logo="https://www.5movierulz.watch/uploads/Patriot-Tamil.jpg" group-title="Movies / Tamil",Patriot
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FM2Y3WmN2V2s3Y29aWVdnaFlDa2xaQT09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Sukhamano Sukhamann" tvg-logo="https://www.5movierulz.watch/uploads/Sukhamano-Sukhamann-Malayalam.jpg" group-title="Movies / Malayalam",Sukhamano Sukhamann
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FcDE3YmRjNTFHZm9odG1jOWRIclJOUT09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Ginny Weds Sunny" tvg-logo="https://www.5movierulz.watch/uploads/Ginny-Weds-Sunny-2-Hindi.jpg" group-title="Movies / Hindi",Ginny Weds Sunny
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FZGwyS1poN2hOdFBNN2VlTFMxc2t2Zz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Ugly Story" tvg-logo="https://www.5movierulz.watch/uploads/Ugly-Story-Hindi.jpg" group-title="Movies / Hindi",Ugly Story
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FM1hxWHBEKy9DQlozV3N0L0hOb0RMZz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Office Romance" tvg-logo="https://www.5movierulz.watch/uploads/Office-Romance-Telugu.jpg" group-title="Movies / Telugu",Office Romance
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FSk9NRFhpekhuQUkzRm1mSVVsdit0UT09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Ugly Story" tvg-logo="https://www.5movierulz.watch/uploads/Ugly-Story-Telugu.jpg" group-title="Movies / Telugu",Ugly Story
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FNGV2enNnOGo5MWNuQkJsTlpXMDRldz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Peter" tvg-logo="https://www.5movierulz.watch/uploads/Peter-Kannada.jpg" group-title="Movies / Kannada",Peter
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FanV1THA0d2VFZU8zT1daWHJ4U1ZyQT09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Ugly Story" tvg-logo="https://www.5movierulz.watch/uploads/Ugly-Story-Tamil.jpg" group-title="Movies / Tamil",Ugly Story
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FQUlvS0huNUhHZnpxUzh6MDdsSlpEZz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="The Rise Of Ashoka" tvg-logo="https://www.5movierulz.watch/uploads/The-Rise-of-Ashoka-Kannada.jpg" group-title="Movies / Kannada",The Rise Of Ashoka
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FMDlKcFVtY2thS0lwajRsN2k5SGZuQT09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="The Marked Woman" tvg-logo="https://www.5movierulz.watch/uploads/The-Marked-Woman-Telugu.jpg" group-title="Movies / Telugu",The Marked Woman
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FbUMzdk9Gb1ZEemdrWENCWDcvaXlBUT09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="The Rise Of Ashoka" tvg-logo="https://www.5movierulz.watch/uploads/The-Rise-of-Ashoka-Telugu.jpg" group-title="Movies / Telugu",The Rise Of Ashoka
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FVi9NTm0wd0FmZ3YzenU5anBoSE93UT09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="29 2026 Hdrip Hindi 7031" tvg-logo="https://www.5movierulz.watch/uploads/29-Hindi.jpg" group-title="Movies / Hindi",29 2026 Hdrip Hindi 7031
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2Fb3FMMjFjdDBhZjFtTHBiMEVJem8wdz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="The Rise Of Ashoka" tvg-logo="https://www.5movierulz.watch/uploads/The-Rise-of-Ashoka-Tamil.jpg" group-title="Movies / Tamil",The Rise Of Ashoka
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FYUowZUJHZmpiSkJjY0tpS2R2VTFaZz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Patriot" tvg-logo="https://www.5movierulz.watch/uploads/Patriot-Hindi.jpg" group-title="Movies / Hindi",Patriot
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FYmQwSzJOSW9EOU1jOEluemMxWnpTdz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Juniors Journey" tvg-logo="https://www.5movierulz.watch/uploads/Juniors-Journey-Malayalam.jpg" group-title="Movies / Malayalam",Juniors Journey
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FbmZVRng3R3BJRU8xRnFKeDdYaCtEZz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Kd The Devil" tvg-logo="https://www.5movierulz.watch/uploads/KD-The-Devil-Kannada.jpg" group-title="Movies / Kannada",Kd The Devil
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FVWhhUFVoeVlaWHhPSDVFd2U5SmNCQT09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Sandigdham" tvg-logo="https://www.5movierulz.watch/uploads/Sandigdham-Telugu.jpg" group-title="Movies / Telugu",Sandigdham
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FclNtZXkwbzljTjMxalRtR3g3UUJzUT09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Aaahladam" tvg-logo="https://www.5movierulz.watch/uploads/Aaahladam-Malayalam.jpg" group-title="Movies / Malayalam",Aaahladam
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FS0pwbHpzOWE0bGNiNEZnWVlMQXc0dz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Rescue Dawn" tvg-logo="https://www.5movierulz.watch/uploads/Rescue-Dawn-Telugu.jpg" group-title="Movies / Telugu",Rescue Dawn
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FK04yQy84TmhKY2taRnBHWmtCak1tQT09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Maa Behen" tvg-logo="https://www.5movierulz.watch/uploads/Maa-Behen-Telugu.jpg" group-title="Movies / Telugu",Maa Behen
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FUjgzUmxLOWxtdXBjMG1BRC93WFI2Zz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Carmeni Selvam" tvg-logo="https://www.5movierulz.watch/uploads/Carmeni-Selvam-Tamil.jpg" group-title="Movies / Tamil",Carmeni Selvam
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FL3R2OENpL3pDNWJySzF5WDlnU1NBUT09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Beast Of War" tvg-logo="https://www.5movierulz.watch/uploads/Beast-of-War-Telugu.jpg" group-title="Movies / Telugu",Beast Of War
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FOWR1WDh3L2pqaUtLU1d3QnlueEoyUT09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="29 2026 Hdrip Tamil 7020" tvg-logo="https://www.5movierulz.watch/uploads/29-Tamil.jpg" group-title="Movies / Tamil",29 2026 Hdrip Tamil 7020
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FMkNqTmZSL2pCSk9kMS9kbmNhaDRDdz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Sattendru Maarudhu Vaanilai" tvg-logo="https://www.5movierulz.watch/uploads/Sattendru-Maarudhu-Vaanilai-Tamil.jpg" group-title="Movies / Tamil",Sattendru Maarudhu Vaanilai
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FUytBVGhWMDR6eXRyOU9qenE4NHJBUT09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Patriot" tvg-logo="https://www.5movierulz.watch/uploads/Patriot-Telugu.jpg" group-title="Movies / Telugu",Patriot
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FL0tLeHN0S1Z4S2Z5WjZONWQ2M0dtdz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Premam Madhuram" tvg-logo="https://www.5movierulz.watch/uploads/Premam-Madhuram-Kannada.jpg" group-title="Movies / Kannada",Premam Madhuram
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FeVFlUlhxUjZpT2p3UHVQamhoS0xEQT09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Patriot" tvg-logo="https://www.5movierulz.watch/uploads/Patriot-Malayalam.jpg" group-title="Movies / Malayalam",Patriot
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FVTVEcUhPU0lMb0dZUGsrSC9vZW5aUT09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="29 2026 Hdrip Telugu 7018" tvg-logo="https://www.5movierulz.watch/uploads/29-Telugu.jpg" group-title="Movies / Telugu",29 2026 Hdrip Telugu 7018
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FU0N0YlBPaENIcGRLVmZSeTZXQzJvZz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Momacu" tvg-logo="https://www.5movierulz.watch/uploads/Momacu-Telugu.jpg" group-title="Movies / Telugu",Momacu
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FQy9nRjNEblg0TC9LTklzL2gyN3ltdz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Kattalan" tvg-logo="https://www.5movierulz.watch/uploads/Kattalan-Hindi-1.jpg" group-title="Movies / Telugu",Kattalan
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FaTVrcDJNU3pzamk1NThOaXgrRm5pQT09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Carmeni Selvam" tvg-logo="https://www.5movierulz.watch/uploads/Carmeni-Selvam-Telugu.jpg" group-title="Movies / Telugu",Carmeni Selvam
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FWmVHNno2YXE5eE1Od3lQdmxVUlJvdz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Kd The Devil" tvg-logo="https://www.5movierulz.watch/uploads/KD-The-Devil-Telugu.jpg" group-title="Movies / Telugu",Kd The Devil
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FNVJXSVh0UzBoeFFLc3NJa3k5ZXRtdz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Dark Face" tvg-logo="https://www.5movierulz.watch/uploads/Dark-Face-Tamil.jpg" group-title="Movies / Tamil",Dark Face
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FeFA0R1Bma3U2R3E0RTBrT08zT05LZz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Aroopi" tvg-logo="https://www.5movierulz.watch/uploads/Aroopi-Malayalam.jpg" group-title="Movies / Malayalam",Aroopi
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FTkU0TmlzUmVodkhncmZzY2daZnVMdz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Aroopi" tvg-logo="https://www.5movierulz.watch/uploads/Aroopi-Hindi.jpg" group-title="Movies / Hindi",Aroopi
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FRGRQRjFNVUZ3NjJrTE54N1BLaUNSdz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Close To Me" tvg-logo="https://www.5movierulz.watch/uploads/Close-to-Me-Telugu.jpg" group-title="Movies / Telugu",Close To Me
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FS05oYU5NZGp5SURsaEhCd25RTDB6dz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="The Death Of Robin Hood" tvg-logo="https://www.5movierulz.watch/uploads/The-Death-of-Robin-Hood-Telugu.jpg" group-title="Movies / Telugu",The Death Of Robin Hood
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FOTZIYUpJSFc4RFU1RTRBYURsL0tQZz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Dont Say Good Luck" tvg-logo="https://www.5movierulz.watch/uploads/Dont-Say-Good-Luck-Telugu.jpg" group-title="Movies / Telugu",Dont Say Good Luck
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FQ0VmKzBVUElYTzNOYUJSb3Z4UUlOZz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Mr Work From Home" tvg-logo="https://www.5movierulz.watch/uploads/Mr.-Work-from-Home-Telugu.jpg" group-title="Movies / Telugu",Mr Work From Home
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FajJPaUdtVkJ2TTFHankwbGtDTTcrUT09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="To The Max" tvg-logo="https://www.5movierulz.watch/uploads/To-the-Max-Telugu.jpg" group-title="Movies / Telugu",To The Max
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FUS9JajF0Y09XOXJiZU1DMGt3NnBQQT09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Heartin" tvg-logo="https://www.5movierulz.watch/uploads/Heartin-Tamil.jpg" group-title="Movies / Tamil",Heartin
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FUVFvYzBKNkRLWUVFSUxQbHBXMFBCUT09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Cocktail" tvg-logo="https://www.5movierulz.watch/uploads/Cocktail-2-Hindi-1.jpg" group-title="Movies / Hindi",Cocktail
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FOEFCUE9WbVRrWDFSQjhldXB5OHBhUT09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Vadala" tvg-logo="https://www.5movierulz.watch/uploads/Vadala-Telugu.jpg" group-title="Movies / Telugu",Vadala
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FU2V5TmpwM3hrYm5ZZkJyckdxbTlZQT09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Euphoria" tvg-logo="https://www.5movierulz.watch/uploads/Euphoria-Hindi.jpg" group-title="Movies / Hindi",Euphoria
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FbG43eDdXM3J6VFMydkR2OGs3eDZxZz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="September" tvg-logo="https://www.5movierulz.watch/uploads/September-21-Kannada.jpg" group-title="Movies / Kannada",September
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FV0ZVNVF1ajVabWhqWGd4eHNuWTFVQT09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Awarapan" tvg-logo="https://www.5movierulz.watch/uploads/Awarapan-2-Hindi.jpg" group-title="Movies / Hindi",Awarapan
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FTE84N240bHNDYmhyWWt0QVZpZG1Jdz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Maa Inti Bangaaram" tvg-logo="https://www.5movierulz.watch/uploads/Maa-Inti-Bangaaram-Hindi.jpg" group-title="Movies / Hindi",Maa Inti Bangaaram
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FV1ZEdmg5N1d2Q3ZDOEMzbmZzYlgvdz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Minions And Monsters" tvg-logo="https://www.5movierulz.watch/uploads/Minions-and-Monsters-Telugu.jpg" group-title="Movies / Telugu",Minions And Monsters
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FYTNvanVLS1BCRTZWN0x4Y25KM29SZz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Korean Kanakaraju" tvg-logo="https://www.5movierulz.watch/uploads/Korean-Kanakaraju-Telugu.jpg" group-title="Movies / Telugu",Korean Kanakaraju
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FNmdpQmticHMvTDNTQzZQUjErTWxkdz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Kattalan" tvg-logo="https://www.5movierulz.watch/uploads/Kattalan-Tamil.jpg" group-title="Movies / Tamil",Kattalan
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FaXNtUVFwK3pOaWhzNkRnc3EvWGpLUT09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Moda Kavida Vatavarana" tvg-logo="https://www.5movierulz.watch/uploads/Moda-Kavida-Vatavarana-Malayalam.jpg" group-title="Movies / Malayalam",Moda Kavida Vatavarana
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FV05lSEo2NnVjSG5DSVQ1UE5KUHFQQT09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Achyuta Avataaram" tvg-logo="https://www.5movierulz.watch/uploads/Achyuta-Avataaram-Telugu.jpg" group-title="Movies / Telugu",Achyuta Avataaram
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FZUJuRDRMZUhmL0tINlRsdFRrN1oxUT09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Aroopi" tvg-logo="https://www.5movierulz.watch/uploads/Aroopi-Tamil.jpg" group-title="Movies / Tamil",Aroopi
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FcmY3Z1owWm8rNTB6czhQU1h5VDdvUT09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Aakhri Sawal" tvg-logo="https://www.5movierulz.watch/uploads/Aakhri-Sawal-Hindi.jpg" group-title="Movies / Hindi",Aakhri Sawal
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FVTdVYnoxUFZiaTJYaHUvQ0xOZkpUUT09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Kattalan" tvg-logo="https://www.5movierulz.watch/uploads/Kattalan-Malayalam.jpg" group-title="Movies / Malayalam",Kattalan
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FSURoRitrNDhwak02VElBeXI0Z3IyUT09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Nizhal" tvg-logo="https://www.5movierulz.watch/uploads/Nizhal-Tamil.jpg" group-title="Movies / Tamil",Nizhal
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FZHBTUVo1QytaUUIwSk52c3dKN3padz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Need For Speed" tvg-logo="https://www.5movierulz.watch/uploads/Need-for-Speed-Telugu.jpg" group-title="Movies / Telugu",Need For Speed
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FbTRlUXVKWHJLNVU3cG9pVXpBM2Jxdz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Mrp Neekentha Naakentha" tvg-logo="https://www.5movierulz.watch/uploads/M.R.P---Neekentha-Naakentha-Hindi.jpg" group-title="Movies / Hindi",Mrp Neekentha Naakentha
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FM0svRmYydWhQbGVwbVFPYjAzOGlQZz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Bharat Bhhagya Viddhaata" tvg-logo="https://www.5movierulz.watch/uploads/Bharat-Bhhagya-Viddhaata-Hindi.jpg" group-title="Movies / Hindi",Bharat Bhhagya Viddhaata
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FSGhocHBVMzZMOEZyRmRSMXU0Qnp4QT09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Kattalan" tvg-logo="https://www.5movierulz.watch/uploads/Kattalan-Kannada.jpg" group-title="Movies / Kannada",Kattalan
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FWWJSd0UrYlBLWEVCYU04RUpoQ2VsQT09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="In The Grey" tvg-logo="https://www.5movierulz.watch/uploads/In-the-Grey-Telugu.jpg" group-title="Movies / Telugu",In The Grey
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2Fc0U4SlQ4KzQ3L04rN2tkZzdTOUYwdz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Gold" tvg-logo="https://www.5movierulz.watch/uploads/Gold-Telugu.jpg" group-title="Movies / Telugu",Gold
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FcTNqZFZSa1REbklaQXZ6NjZ1V3lDdz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Oh Sukumari" tvg-logo="https://www.5movierulz.watch/uploads/Oh-Sukumari-Tamil.jpg" group-title="Movies / Tamil",Oh Sukumari
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FeFNqYjZ3N3lscWZmNUFva2t4eXZPZz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Idhayam Murali" tvg-logo="https://www.5movierulz.watch/uploads/Idhayam-Murali-Tamil.jpg" group-title="Movies / Tamil",Idhayam Murali
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FaWIzd01sNm42Y3ZjZDZkVXZkdVE2dz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Dc" tvg-logo="https://www.5movierulz.watch/uploads/DC-Telugu.jpg" group-title="Movies / Telugu",Dc
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FYmhmRXZibVBmV0JMamF3NitaTWluZz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="The Super Mario Galaxy Movie" tvg-logo="https://www.5movierulz.watch/uploads/The-Super-Mario-Galaxy-Movie-Telugu.jpg" group-title="Movies / Telugu",The Super Mario Galaxy Movie
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FbzRreUk4Rk9Rd0x6UWlQWURMcXZ5QT09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Maggi Pusthaka" tvg-logo="https://www.5movierulz.watch/uploads/Maggi-Pusthaka-Kannada.jpg" group-title="Movies / Kannada",Maggi Pusthaka
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FVGlaZ3BIbzdEUWdHbjMva3pFWTcvUT09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="The Last House" tvg-logo="https://www.5movierulz.watch/uploads/The-Last-House-Telugu.jpg" group-title="Movies / Telugu",The Last House
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FclRPTFFNTlZoM2NsMExBaktxTGE2QT09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Mrp Neekentha Naakentha" tvg-logo="https://www.5movierulz.watch/uploads/M.R.P-Neekentha-Naakentha-Telugu.jpg" group-title="Movies / Telugu",Mrp Neekentha Naakentha
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FK0Ftb2ZsT0VUNmRVdzdkS2NLRU9wQT09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Vanda Devullu" tvg-logo="https://www.5movierulz.watch/uploads/Vanda-Devullu-Telugu.jpg" group-title="Movies / Telugu",Vanda Devullu
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FV1lhbnFxMmxFalV0ZTFCcnh0Z1FpZz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Main Vaapas Aaunga" tvg-logo="https://www.5movierulz.watch/uploads/Main-Vaapas-Aaunga-Hindi.jpg" group-title="Movies / Hindi",Main Vaapas Aaunga
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FOW9FK1JBdVptYWtDeStiMldHc2VHZz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Idhayam Murali" tvg-logo="https://www.5movierulz.watch/uploads/Idhayam-Murali-Hindi.jpg" group-title="Movies / Hindi",Idhayam Murali
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FR0g1Z080Yk11aGlNTGpzNWIzL3l3dz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Mrp Neekentha Naakentha" tvg-logo="https://www.5movierulz.watch/uploads/M.R.P---Neekentha-Naakentha-Tamil.jpg" group-title="Movies / Tamil",Mrp Neekentha Naakentha
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2Fa202TkU2SmJHR1Vtc09KcnY1SnQrdz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Oh Sukumari" tvg-logo="https://www.5movierulz.watch/uploads/Oh-Sukumari-Malayalam.jpg" group-title="Movies / Malayalam",Oh Sukumari
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2Fa3ZBQXNMUG5NbmtqcldXQnM4QWdBdz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Sathyathil Sambhavichathu" tvg-logo="https://www.5movierulz.watch/uploads/Sathyathil-Sambhavichathu-Malayalam.jpg" group-title="Movies / Malayalam",Sathyathil Sambhavichathu
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FT2dKcVZ6Vnl6aUZYd1gwZEI4U0FlZz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Dark Giant" tvg-logo="https://www.5movierulz.watch/uploads/Dark-Giant-Tamil.jpg" group-title="Movies / Tamil",Dark Giant
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FVFFxSEpUbzRnckI5RDg3VUZTU3ExUT09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Mahabali 1980S" tvg-logo="https://www.5movierulz.watch/uploads/Mahabali-1980s-Telugu.jpg" group-title="Movies / Telugu",Mahabali 1980S
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FaUlTeHk5ajVWSjZta0R3bEo5Nk8xUT09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Moda Kavida Vatavarana" tvg-logo="https://www.5movierulz.watch/uploads/Moda-Kavida-Vatavarana-Kannada.jpg" group-title="Movies / Kannada",Moda Kavida Vatavarana
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FYWRWeFRtNlNBa3VYalFuNHl4enpTQT09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Hrudhayam Murali" tvg-logo="https://www.5movierulz.watch/uploads/Hrudhayam-Murali-Telugu-1.jpg" group-title="Movies / Telugu",Hrudhayam Murali
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FYkRnUjVWeWY2UWkvbUkxVXFkOHlRZz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Lenin" tvg-logo="https://www.5movierulz.watch/uploads/Lenin-Telugu.jpg" group-title="Movies / Telugu",Lenin
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FNzh6NS9BdVZObFBIemZFc1hQNGl0dz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Uyir" tvg-logo="https://www.5movierulz.watch/uploads/Uyir-Tamil.jpg" group-title="Movies / Tamil",Uyir
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FZnlaMXFoVjlCRnVLVGI4bkdLYTNMQT09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Second Case Of Seetharam" tvg-logo="https://www.5movierulz.watch/uploads/Second-Case-Of-Seetharam-Telugu.jpg" group-title="Movies / Telugu",Second Case Of Seetharam
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FY0JBMUNSOEMyNnBkR2U0T3JXMzlnQT09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Dr Bennat" tvg-logo="https://www.5movierulz.watch/uploads/Dr-Bennat-Malayalam.jpg" group-title="Movies / Malayalam",Dr Bennat
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FMHBPdXZSVVE1UHZsc00zL1RIaWVqdz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Battle" tvg-logo="https://www.5movierulz.watch/uploads/Battle-Tamil.jpg" group-title="Movies / Tamil",Battle
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FV1A4Y0EwY3ZyVTQzSFJ2a0NENnowZz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Oh Sukumari" tvg-logo="https://www.5movierulz.watch/uploads/Oh-Sukumari-Telugu.jpg" group-title="Movies / Telugu",Oh Sukumari
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FQWxmLy93VTc2RTFCYnYrdEZ0eENOUT09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Unidentified" tvg-logo="https://www.5movierulz.watch/uploads/Unidentified-Telugu.jpg" group-title="Movies / Telugu",Unidentified
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FQWw2dUk3QkR4bzJuY0FkTjM0R0xzUT09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Oru Kaalathil Aasthireliyavil" tvg-logo="https://www.5movierulz.watch/uploads/Oru-Kaalathil-Aasthireliyavil-Tamil.jpg" group-title="Movies / Tamil",Oru Kaalathil Aasthireliyavil
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FZERjTWNEL1VwdTZNbW43dW9Nb2dwUT09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Crossing Lines" tvg-logo="https://www.5movierulz.watch/uploads/Crossing-Lines-Telugu.jpg" group-title="Movies / Telugu",Crossing Lines
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FbENsZVBnaDlORFJHc2IvdVZiS25SUT09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Paithalattam" tvg-logo="https://www.5movierulz.watch/uploads/Paithalattam-Malayalam.jpg" group-title="Movies / Malayalam",Paithalattam
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FV1RSYUkxa09mZVltTmd5RUlZbTVhdz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Police Complaint" tvg-logo="https://www.5movierulz.watch/uploads/Police-Complaint-Telugu.jpg" group-title="Movies / Telugu",Police Complaint
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FQ0RqSno5UlhwaFJQOS92cnU2TmZEUT09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Deewana" tvg-logo="https://www.5movierulz.watch/uploads/Deewana-Tamil.jpg" group-title="Movies / Tamil",Deewana
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FZlBjb3V6MTQwTTc4MTZkY0ZMTGxvdz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Gatta Kusthi" tvg-logo="https://www.5movierulz.watch/uploads/Gatta-Kusthi-2-Malayalam.jpg" group-title="Movies / Malayalam",Gatta Kusthi
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FOWg5K3ZaWFJmSWdRa2d1ZUY4eWJLQT09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="The Shallows" tvg-logo="https://www.5movierulz.watch/uploads/The-Shallows-Telugu.jpg" group-title="Movies / Telugu",The Shallows
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FUlV6QldkbGVvaXpFNk9EUUFjT3d1UT09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Uyir" tvg-logo="https://www.5movierulz.watch/uploads/Uyir-Telugu.jpg" group-title="Movies / Telugu",Uyir
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FVFdId09xYkp2aFY1dER3cHNmbkNsdz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Rao Bahadur" tvg-logo="https://www.5movierulz.watch/uploads/Rao-Bahadur-Tamil.jpg" group-title="Movies / Tamil",Rao Bahadur
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FZnJJbXU5NVZSeExVNXBKNVpycFhBUT09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Love Oh Love" tvg-logo="https://www.5movierulz.watch/uploads/Love-Oh-Love-Tamil.jpg" group-title="Movies / Tamil",Love Oh Love
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FTDNLVHAzanhSQ2JjUGRjajJqOXhyQT09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Uyir" tvg-logo="https://www.5movierulz.watch/uploads/Uyir-Malayalam.jpg" group-title="Movies / Malayalam",Uyir
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FVklaVlNHS0V6eEN5Y1M4K0JBTk5aZz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Son Of Sara Volume" tvg-logo="https://www.5movierulz.watch/uploads/Son-of-Sara-Volume-1-Telugu.jpg" group-title="Movies / Telugu",Son Of Sara Volume
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FbUJZK3A4MEIwUFlOeGhaVVoxNnNqQT09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Evil Dead Burn" tvg-logo="https://www.5movierulz.watch/uploads/Evil-Dead-Burn-English.jpg" group-title="Movies / English",Evil Dead Burn
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FSjl0UmtBaVNJSkFDUTdUTnhmTDhkZz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Beast" tvg-logo="https://www.5movierulz.watch/uploads/Beast-Telugu.jpg" group-title="Movies / Telugu",Beast
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FMGJ5OUUwVVlxYjJpMnkvVTlLQ0sxZz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Rao Bahadur" tvg-logo="https://www.5movierulz.watch/uploads/Rao-Bahadur-Hindi.jpg" group-title="Movies / Hindi",Rao Bahadur
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FQjBHcDUvclM5SnpQb3FrZHpTclNkZz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Chum" tvg-logo="https://www.5movierulz.watch/uploads/Chum-Telugu.jpg" group-title="Movies / Telugu",Chum
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FUXNQb1NCQ1ZwVXBBRmtZWEhUcGVKUT09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Gatta Kusthi" tvg-logo="https://www.5movierulz.watch/uploads/Gatta-Kusthi-2-Tamil.jpg" group-title="Movies / Tamil",Gatta Kusthi
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2Fa2tEejJSSGpWbTFqQlRTUVVrUGNvZz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Deewana" tvg-logo="https://www.5movierulz.watch/uploads/Deewana-Telugu.jpg" group-title="Movies / Telugu",Deewana
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FenhRWnZyOGpUMUFxN1Q5bGJyc25TQT09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Kaalam Paranja Kadha" tvg-logo="https://www.5movierulz.watch/uploads/Kaalam-Paranja-Kadha-Malayalam.jpg" group-title="Movies / Malayalam",Kaalam Paranja Kadha
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FcEVCTGExTXVrczFTT1ptME1DQy9jdz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Ghost Train" tvg-logo="https://www.5movierulz.watch/uploads/Ghost-Train-Telugu.jpg" group-title="Movies / Telugu",Ghost Train
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FaTVpSlVuVGZjcGwxa0g2MDhSK3RxQT09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Balan" tvg-logo="https://www.5movierulz.watch/uploads/Balan-Telugu.jpg" group-title="Movies / Telugu",Balan
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2Fc2hCV1BGMHMwNHJUNDJOcU5tbzBvdz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Rao Bahadur" tvg-logo="https://www.5movierulz.watch/uploads/Rao-Bahadur-Telugu-1.jpg" group-title="Movies / Telugu",Rao Bahadur
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FK2tNOVZvUktVWVBEa1BxTGlMSlkvZz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Demon Slayer Kimetsu No Yaiba Infinity Castle" tvg-logo="https://www.5movierulz.watch/uploads/Demon-Slayer-Kimetsu-No-Yaiba-Infinity-Castle-Telugu.jpg" group-title="Movies / Telugu",Demon Slayer Kimetsu No Yaiba Infinity Castle
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FNTlYQitSb2ZvTTJZTXdweHNSSTg5UT09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Love Oh Love" tvg-logo="https://www.5movierulz.watch/uploads/Love-Oh-Love-Telugu.jpg" group-title="Movies / Telugu",Love Oh Love
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FRC9CQjFwS2VvUHRMRjBlNjJYRkNrQT09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Mellisai" tvg-logo="https://www.5movierulz.watch/uploads/Mellisai-Tamil.jpg" group-title="Movies / Tamil",Mellisai
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FRVBWN1hEd1BQeWsxRWV4ZHZSRWw5Zz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="A Padam" tvg-logo="https://www.5movierulz.watch/uploads/A-Padam-Tamil.jpg" group-title="Movies / Tamil",A Padam
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FSlFMLzZnSElMcmpUWTNtN2VBVmJVdz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Peddi" tvg-logo="https://www.5movierulz.watch/uploads/Peddi-Hindi.jpg" group-title="Movies / Hindi",Peddi
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FZCsvZ1pBc1pKWWwvc29UWEN0L25wQT09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Gatta Kusthi" tvg-logo="https://www.5movierulz.watch/uploads/Gatta-Kusthi-2-Telugu.jpg" group-title="Movies / Telugu",Gatta Kusthi
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FY2JWczZXeXp5NFRHT3YydGZJVWVnZz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Balan" tvg-logo="https://www.5movierulz.watch/uploads/Balan-Malayalam.jpg" group-title="Movies / Malayalam",Balan
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FMUx1MTNBdG1IVkRkdHhnVlZZSDNUQT09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Chinna Chinna Aasai" tvg-logo="https://www.5movierulz.watch/uploads/Chinna-Chinna-Aasai-Tamil.jpg" group-title="Movies / Tamil",Chinna Chinna Aasai
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FemV5eFNjUUp0VUJuRGhuRnFSZUJuUT09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Hai Jawani Toh Ishq Hona Hai" tvg-logo="https://www.5movierulz.watch/uploads/Hai-Jawani-Toh-Ishq-Hona-Hai-Hindi.jpg" group-title="Movies / Hindi",Hai Jawani Toh Ishq Hona Hai
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FUVNyazFIRjF2RldxMDE5MTdRKzIrdz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="The Devils Mouth" tvg-logo="https://www.5movierulz.watch/uploads/The-Devils-Mouth-Telugu.jpg" group-title="Movies / Telugu",The Devils Mouth
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FMmFKcC9UclNYR01hTm9jK1dYeHU1QT09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Spider Man Brand New Day" tvg-logo="https://www.5movierulz.watch/uploads/Spider-Man-Brand-New-Day-Telugu.jpg" group-title="Movies / Telugu",Spider Man Brand New Day
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FSG5SOFRlaStMQ1JGQmFhbVJqYnQvZz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Nagabandham" tvg-logo="https://www.5movierulz.watch/uploads/Nagabandham-Tamil.jpg" group-title="Movies / Tamil",Nagabandham
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FQU5pVDR5V1c2elp0Ti9SQmp1aE5ydz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Musafir Cafe Season" tvg-logo="https://www.5movierulz.watch/uploads/Musafir-Cafe-Season-1-Telugu.jpg" group-title="Movies / Telugu",Musafir Cafe Season
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FZHJLV21CYU5mTStFMnNPSDdVUXJWZz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Con City" tvg-logo="https://www.5movierulz.watch/uploads/Con-City-Hindi.jpg" group-title="Movies / Hindi",Con City
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FcWNITkpNblM0V1NRc0tVUE9ETUhSdz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Mylanji" tvg-logo="https://www.5movierulz.watch/uploads/Mylanji-Tamil.jpg" group-title="Movies / Tamil",Mylanji
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FNllwK3hpNHFYMmZYYXpRcTZ4UXFWUT09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Con City" tvg-logo="https://www.5movierulz.watch/uploads/Con-City-Tamil.jpg" group-title="Movies / Tamil",Con City
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FNkVETDZtVEtLM0xOV2gzT3A3Rk81Zz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Chinna Chinna Aasai" tvg-logo="https://www.5movierulz.watch/uploads/Chinna-Chinna-Aasai-Telugu.jpg" group-title="Movies / Telugu",Chinna Chinna Aasai
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FeVlNUUJPalYwTVJrQWhVZjhzR0VHZz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Protector" tvg-logo="https://www.5movierulz.watch/uploads/Protector-Telugu.jpg" group-title="Movies / Telugu",Protector
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FNklFRERWdG00cnNyOVFyR3JEd2VOdz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Chinna Chinna Aasai" tvg-logo="https://www.5movierulz.watch/uploads/Chinna-Chinna-Aasai-Malayalam.jpg" group-title="Movies / Malayalam",Chinna Chinna Aasai
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FTmtXV3krb1ZneHRBS1RkMkNxb0hlZz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Andharan" tvg-logo="https://www.5movierulz.watch/uploads/Andharan-Tamil.jpg" group-title="Movies / Tamil",Andharan
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FRTE2WjlseVJDbExRUFBXZzl5TkgrUT09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Lo Naveena" tvg-logo="https://www.5movierulz.watch/uploads/Lo-Naveena-Kannada.jpg" group-title="Movies / Kannada",Lo Naveena
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FbG4rcFdyam1ETHhTTXIvdER5bXRRdz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Kalyanamaram" tvg-logo="https://www.5movierulz.watch/uploads/Kalyanamaram-Malayalam.jpg" group-title="Movies / Malayalam",Kalyanamaram
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FNHZCejh5Rk50OFVaeDRkMFRDbUNlQT09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="72 Hours 2026 Hdrip Telugu Dubbed 7235" tvg-logo="https://www.5movierulz.watch/uploads/72-Hours-Telugu.jpg" group-title="Movies / Telugu",72 Hours 2026 Hdrip Telugu Dubbed 7235
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FMDRpaVhjZVlCZk1zS0dEVmdnS0tnZz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Triple Decker" tvg-logo="https://www.5movierulz.watch/uploads/Triple-Decker-Malayalam.jpg" group-title="Movies / Malayalam",Triple Decker
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2Fdno2YXBsNDhqWjgwUHZkYW1qQW0wUT09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="The Truthers" tvg-logo="https://www.5movierulz.watch/uploads/The-Truthers-Telugu.jpg" group-title="Movies / Telugu",The Truthers
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FdEFnV1lUR0drd25EOWp1REdKczJUZz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Purushaha" tvg-logo="https://www.5movierulz.watch/uploads/Purushaha-Telugu-1.jpg" group-title="Movies / Telugu",Purushaha
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2Fc09UMnNSNTNKYzZWNjJIUlAyTjVYQT09%2FxfgdYshjhYhj%3D%21sdsHsyG
+#EXTINF:-1 tvg-name="Supergirl" tvg-logo="https://www.5movierulz.watch/uploads/Supergirl-Telugu-1.jpg" group-title="Movies / Telugu",Supergirl
+https://movierulz.babuperumana.workers.dev/proxy?url=https%3A%2F%2Fhls2.vcdnx.com%2Fhls%2FTHlPZ2FMdlAySklGeGUrYzFLZUc0dz09%2FxfgdYshjhYhj%3D%21sdsHsyG
+

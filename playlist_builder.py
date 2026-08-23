@@ -44,7 +44,7 @@ HEADERS = {"User-Agent": USER_AGENT}
 
 PROXY_TEMPLATE = os.environ.get(
     "PROXY_TEMPLATE",
-    "https://my-worker.workers.dev/proxy?url={url}",
+    "https://movierulz.babuperumana.workers.dev/proxy?url={url}",
 )
 
 MAX_LIST_PAGES = int(os.environ.get("MAX_LIST_PAGES", "500"))
@@ -230,10 +230,9 @@ def discover_listing_pages(session, base_url, page_cache=None):
 # Step 2: Extract movie page links from listing pages
 # ---------------------------------------------------------------------------
 
-# Current URL pattern: /title-year-quality-language-ID.html
-# e.g. /irumudi-2026-dvdscr-telugu-7377.html
+# Current URL pattern: /title-year-quality-language-ID.html or /title/movie-watch-online-free-ID.html
 MOVIE_URL_RE = re.compile(
-    r'^https?://[^/]+/[a-z0-9]+-\d{4}-[a-z0-9]+-[a-z]+-\d+\.html$'
+    r'^https?://[^/]+/[a-z0-9-]+(?:/[a-z0-9-]+)*\.html$'
 )
 
 
@@ -340,7 +339,7 @@ def _guess_title_from_url(url):
 
 def _guess_year_from_url(url):
     """Extract year from URL pattern."""
-    match = re.search(r'/([a-z0-9-]+)-(\d{4})-[a-z0-9]+-[a-z]+-(\d+)\.html', url)
+    match = re.search(r'/([a-z0-9-]+)-(\d{4})-[a-z0-9-]+-[a-z0-9-]+-(\d+)\.html', url)
     if match:
         return int(match.group(2))
     return None
@@ -401,6 +400,11 @@ def extract_streams(session, movies):
 
         html = resp.text
 
+        # Extract poster image for tvg-logo
+        img_match = re.search(r'<img[^>]+src=["\'](https?://[^"\']+/uploads/[^"\']+)["\']', html)
+        if img_match:
+            movie["logo"] = img_match.group(1)
+
         # Find embedded player iframes: var locations = ["url1", "url2"];
         # Also check for: var players = [...]
         iframe_urls = []
@@ -434,6 +438,9 @@ def extract_streams(session, movies):
 
         stream_url = None
         for iframe_url in iframe_urls:
+            if '.m3u8' in iframe_url or '.mp4' in iframe_url or '.mkv' in iframe_url:
+                stream_url = iframe_url
+                break
             stream_url = _extract_from_iframe(session, iframe_url, movie["url"])
             if stream_url:
                 break
@@ -507,7 +514,7 @@ def build_m3u(movies, proxy_template):
         title = movie["title"]
         year = movie.get("year")
         group = _guess_group(movie)
-        logo = ""
+        logo = movie.get("logo", "")
 
         display_name = title
 

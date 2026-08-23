@@ -23,7 +23,7 @@ jobs:
           path: |
             .playlist_cache.json
             .page_cache.json
-          key: playlist-cache-v1
+          key: playlist-cache-${{ github.run_id }}
           restore-keys: |
             playlist-cache-
 
