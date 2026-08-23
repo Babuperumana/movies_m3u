@@ -39,12 +39,6 @@ jobs:
       - name: Build playlist
         run: python playlist_builder.py --output playlist.m3u --append --cache .playlist_cache.json
 
-      - name: Count entries
-        id: count
-        run: |
-          COUNT=$(grep -c "^#EXTINF" playlist.m3u || echo 0)
-          echo "count=$COUNT" >> "$GITHUB_OUTPUT"
-
       - name: Commit and push
         run: |
           git config user.name "github-actions[bot]"
