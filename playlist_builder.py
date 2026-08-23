@@ -163,25 +163,28 @@ def discover_listing_pages(session, base_url, page_cache=None):
         max_linked = max(page_nums)
         print(f"[scraper] Max linked page: {max_linked}")
 
-        # First run: mark linked pages as known
-        if last_discovered == 0:
-            for i in range(1, max_linked + 1):
-                url = f"{domain}/movies/page/{i}"
-                if url not in page_cache:
-                    page_cache[url] = []
-
         # Determine the range to discover this run
-        start_page = max(last_discovered + 1, max_linked + 1)
-        end_page = start_page + MAX_DISCOVERY_PAGES - 1
+        # First run: fetch pages 1..max_linked + next batch
+        # Subsequent runs: resume from last_discovered + 1
+        if last_discovered == 0:
+            start_page = 1
+            end_page = start_page + MAX_DISCOVERY_PAGES - 1
+            print(f"[scraper] First run: discovering pages {start_page}-{end_page}")
+        else:
+            start_page = last_discovered + 1
+            end_page = start_page + MAX_DISCOVERY_PAGES - 1
+            print(f"[scraper] Resuming: discovering pages {start_page}-{end_page}")
 
-        print(f"[scraper] Discovering pages {start_page}-{end_page}")
-
-        # Build list of pages to fetch
+        # Build list of pages to fetch (include pages marked empty to retry)
         to_fetch = []
         for i in range(start_page, end_page + 1):
             url = f"{domain}/movies/page/{i}"
-            if url not in page_cache or not page_cache.get(url):
+            if url not in page_cache:
                 to_fetch.append(url)
+            elif not page_cache[url]:
+                # Empty cache entry — retry once to confirm
+                to_fetch.append(url)
+            # else: has cached movies, skip
 
         if not to_fetch:
             print("[scraper] No new pages to discover")
