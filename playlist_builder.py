@@ -51,7 +51,7 @@ POLITE_DELAY = float(os.environ.get("POLITE_DELAY", "0.5"))
 
 # Max movies to extract streams for per run (to stay within timeout).
 # The playlist grows incrementally over multiple runs.
-MAX_STREAMS_PER_RUN = int(os.environ.get("MAX_STREAMS_PER_RUN", "200"))
+MAX_STREAMS_PER_RUN = int(os.environ.get("MAX_STREAMS_PER_RUN", "50"))
 
 MOVIERULZ_DOMAINS = [
     "https://www.5movierulz.watch",
