@@ -22,6 +22,7 @@ import os
 import re
 import sys
 import time
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timezone
 from pathlib import Path
 from urllib.parse import urljoin
@@ -48,6 +49,10 @@ PROXY_TEMPLATE = os.environ.get(
 
 MAX_LIST_PAGES = int(os.environ.get("MAX_LIST_PAGES", "500"))
 POLITE_DELAY = float(os.environ.get("POLITE_DELAY", "0.5"))
+
+# Concurrent workers for page discovery (fast, read-only)
+DISCOVERY_WORKERS = int(os.environ.get("DISCOVERY_WORKERS", "50"))
+MAX_DISCOVERY_PAGES = int(os.environ.get("MAX_DISCOVERY_PAGES", "200"))  # Cap page discovery to prevent unbounded scraping
 
 # Max movies to extract streams for per run (to stay within timeout).
 # The playlist grows incrementally over multiple runs.
@@ -83,15 +88,60 @@ def _get(session, url, **kwargs):
 # Step 1: Discover movie listing pages
 # ---------------------------------------------------------------------------
 
+def _fetch_page(session, url):
+    """Fetch a single page, return (url, html_or_None)."""
+    try:
+        resp = session.get(url, headers=HEADERS, timeout=10)
+        if resp.status_code == 200:
+            return url, resp.text
+    except Exception:
+        pass
+    return url, None
+
+
+def _fetch_pages_concurrent(session, urls, max_workers=50):
+    """Fetch multiple pages concurrently using thread pool."""
+    results = {}
+    with ThreadPoolExecutor(max_workers=max_workers) as executor:
+        futures = {executor.submit(_fetch_page, session, url): url for url in urls}
+        for future in as_completed(futures):
+            try:
+                url, html = future.result(timeout=15)
+                if html:
+                    results[url] = html
+            except Exception:
+                pass
+    return results
+
+
+def _page_has_movies(html):
+    """Check if a listing page HTML has movie entries."""
+    titles = re.findall(r'<a[^>]+title="([^"]+)"[^>]+href="(https?://[^"]+\.html)"', html)
+    return any(MOVIE_URL_RE.match(u) for _, u in titles)
+
+
+def _extract_movie_urls(html):
+    """Extract unique movie URLs from a listing page HTML."""
+    titles = re.findall(r'<a[^>]+title="([^"]+)"[^>]+href="(https?://[^"]+\.html)"', html)
+    return list(set(u for _, u in titles if MOVIE_URL_RE.match(u)))
+
+
 def discover_listing_pages(session, base_url, page_cache=None):
     """
-    Find ALL paginated movie listing pages.
-    Uses a page cache to skip already-scraped pages on subsequent runs.
-    The site only links to pages 0 and 15 in pagination, but has 500+ pages.
-    We start from the last linked page and keep going until we hit empty pages.
+    Find paginated movie listing pages incrementally.
+
+    Strategy:
+      1. Check cache for last discovered page (resume point)
+      2. Fetch the next batch of pages concurrently (MAX_DISCOVERY_PAGES per run)
+      3. Empty pages get marked with [] so they're not retried
+      4. Over multiple runs, all pages are discovered
     """
     if page_cache is None:
         page_cache = {}
+
+    # Determine where to resume from
+    last_discovered = page_cache.get("_last_discovered_page", 0)
+    print(f"[scraper] Last discovered page: {last_discovered}")
 
     for domain in MOVIERULZ_DOMAINS:
         resp = _get(session, domain)
@@ -99,79 +149,80 @@ def discover_listing_pages(session, base_url, page_cache=None):
             continue
 
         html = resp.text
-        listing_urls = []
 
-        # Find the highest page number from pagination links
-        page_links = set(re.findall(r'href=["\']([^"\']*\/page\/\d+[^"\']*)["\']', html))
-        page_nums = []
-        for link in page_links:
-            m = re.search(r'/page/(\d+)', link)
-            if m:
-                page_nums.append(int(m.group(1)))
-
+        # Get max linked page from pagination (usually 15-421)
+        page_nums = [
+            int(m.group(1))
+            for link in set(re.findall(r'href=["\']([^"\']*\/page\/\d+[^"\']*)["\']', html))
+            if (m := re.search(r'/page/(\d+)', link))
+        ]
         if not page_nums:
             print("[scraper] No pagination found")
             return [], page_cache
 
-        start_page = max(page_nums)
-        print(f"[scraper] Pagination shows up to page {start_page}, discovering more...")
+        max_linked = max(page_nums)
+        print(f"[scraper] Max linked page: {max_linked}")
 
-        # First pass: check which pages are already cached
-        cached_pages = set(page_cache.keys())
-        print(f"[scraper] {len(cached_pages)} pages already in cache")
+        # First run: mark linked pages as known
+        if last_discovered == 0:
+            for i in range(1, max_linked + 1):
+                url = f"{domain}/movies/page/{i}"
+                if url not in page_cache:
+                    page_cache[url] = []
 
-        # Collect known page URLs (pages 1 to start_page from the linked range)
-        for i in range(1, start_page + 1):
-            page_url = f"{domain}/movies/page/{i}"
-            if page_url not in cached_pages:
-                listing_urls.append(page_url)
+        # Determine the range to discover this run
+        start_page = max(last_discovered + 1, max_linked + 1)
+        end_page = start_page + MAX_DISCOVERY_PAGES - 1
 
-        # Keep fetching beyond the last linked page until empty
-        consecutive_empty = 0
-        page = start_page + 1
-        while consecutive_empty < 3:
-            page_url = f"{domain}/movies/page/{page}"
-            if page_url in cached_pages:
-                # We know this page exists, add it and continue
-                listing_urls.append(page_url)
-                page += 1
-                continue
+        print(f"[scraper] Discovering pages {start_page}-{end_page}")
 
-            resp = _get(session, page_url)
-            if not resp or resp.status_code != 200:
-                consecutive_empty += 1
-                page += 1
-                continue
+        # Build list of pages to fetch
+        to_fetch = []
+        for i in range(start_page, end_page + 1):
+            url = f"{domain}/movies/page/{i}"
+            if url not in page_cache or not page_cache.get(url):
+                to_fetch.append(url)
 
-            titles = re.findall(r'<a[^>]+title="([^"]+)"[^>]+href="(https?://[^"]+\.html)"', resp.text)
-            valid_urls = [u for _, u in titles if MOVIE_URL_RE.match(u)]
-            unique_count = len(set(valid_urls))
+        if not to_fetch:
+            print("[scraper] No new pages to discover")
+            # Return all known page URLs
+            final_urls = sorted([u for u in page_cache
+                                 if u.startswith(f"{domain}/movies/page/") and not u.startswith("_")])
+            return final_urls, page_cache
 
-            if unique_count > 0:
-                listing_urls.append(page_url)
-                # Cache this page's movie URLs
-                page_cache[page_url] = list(set(valid_urls))
-                consecutive_empty = 0
+        print(f"[scraper] Fetching {len(to_fetch)} pages concurrently...")
+
+        # Concurrent batch fetch
+        fetched = {}
+        batch_size = DISCOVERY_WORKERS
+        for i in range(0, len(to_fetch), batch_size):
+            batch = to_fetch[i:i + batch_size]
+            results = _fetch_pages_concurrent(session, batch, max_workers=DISCOVERY_WORKERS)
+            fetched.update(results)
+
+        # Process results: find last page with movies, update cache
+        last_with_content = last_discovered
+        for url, html in fetched.items():
+            if html and _page_has_movies(html):
+                page_cache[url] = _extract_movie_urls(html)
+                m = re.search(r'/movies/page/(\d+)', url)
+                if m:
+                    pg = int(m.group(1))
+                    last_with_content = max(last_with_content, pg)
             else:
-                consecutive_empty += 1
-            page += 1
+                page_cache[url] = []
 
-        last_page = page - consecutive_empty - 1
-        # Ensure all known pages from 1 to last_page are in the cache
-        for i in range(1, last_page + 1):
-            page_url = f"{domain}/movies/page/{i}"
-            if page_url not in page_cache:
-                page_cache[page_url] = []  # Mark as known (fetched during this run)
+        # Update resume marker
+        page_cache["_last_discovered_page"] = last_with_content
 
-        new_pages = len(listing_urls)
-        cached_count = last_page - new_pages
-        print(f"[scraper] Will fetch {new_pages} new pages, {cached_count} from cache (total: {last_page})")
-        return listing_urls, page_cache
+        # Return all known page URLs
+        final_urls = sorted([u for u in page_cache
+                             if u.startswith(f"{domain}/movies/page/") and not u.startswith("_")])
+        print(f"[scraper] Discovery done: last page with content = {last_with_content}, total known = {len(final_urls)}")
+        return final_urls, page_cache
 
     print("[scraper] Could not reach any Movierulz domain")
     return [], page_cache
-
-
 # ---------------------------------------------------------------------------
 # Step 2: Extract movie page links from listing pages
 # ---------------------------------------------------------------------------
@@ -263,6 +314,33 @@ def extract_movie_links(session, listing_urls, page_cache=None):
         time.sleep(POLITE_DELAY)
 
     return movies, page_cache
+
+
+def _guess_title_from_url(url):
+    """Guess a title from a movie URL when no title is available."""
+    try:
+        slug = url.split('/')[-1].replace('.html', '')
+        parts = slug.split('-')
+        # Extract text parts before the year
+        title_parts = []
+        for p in parts:
+            if re.match(r'^\d{4}$', p):
+                break
+            if p.isdigit():
+                break
+            title_parts.append(p)
+        title = ' '.join(title_parts).replace('-', ' ').title()
+        return title if title else slug.replace('-', ' ').title()
+    except Exception:
+        return "Unknown"
+
+
+def _guess_year_from_url(url):
+    """Extract year from URL pattern."""
+    match = re.search(r'/([a-z0-9-]+)-(\d{4})-[a-z0-9]+-[a-z]+-(\d+)\.html', url)
+    if match:
+        return int(match.group(2))
+    return None
 
 
 def _guess_year(title):
@@ -596,6 +674,7 @@ def run(output="playlist.m3u", append=False, cache_file=DEFAULT_CACHE_FILE):
 
     This is incremental:
       - Uses page cache to skip already-scraped listing pages
+      - Only discovers up to MAX_DISCOVERY_PAGES per run (first run discovers all)
       - Skips movies already in the entry cache
       - Extracts streams for up to MAX_STREAMS_PER_RUN new movies
       - Over multiple runs, the playlist grows to include all movies
