@@ -25,6 +25,17 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
+      - name: Configure proxy URL
+        env:
+          PROXY_SECRET: ${{ secrets.PROXY_URL }}
+        run: |
+          if [ -n "$PROXY_SECRET" ]; then
+            echo "PROXY_TEMPLATE=${PROXY_SECRET}/proxy?url={url}" >> "$GITHUB_ENV"
+          else
+            echo "PROXY_TEMPLATE=https://my-worker.workers.dev/proxy?url={url}" >> "$GITHUB_ENV"
+            echo "::warning::PROXY_URL secret not set -- using placeholder"
+          fi
+
       - name: Build playlist
         run: python playlist_builder.py --output playlist.m3u --append --cache .playlist_cache.json
 
