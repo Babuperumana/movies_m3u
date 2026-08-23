@@ -1,5 +1,5 @@
 """
-playlist_builder.py — Movierulz → IPTV Playlist Builder
+playlist_builder.py — Movierulz -> IPTV Playlist Builder
 =======================================================
 Scrapes Movierulz movie listings, extracts stream URLs, and builds
 an IPTV-compatible M3U playlist compatible with OTT Navigator, TiviMate,
@@ -41,20 +41,14 @@ USER_AGENT = (
 
 HEADERS = {"User-Agent": USER_AGENT}
 
-# Proxy URL template — the Cloudflare Worker proxy.
-# {url} will be URL-encoded stream URL.
 PROXY_TEMPLATE = os.environ.get(
     "PROXY_TEMPLATE",
     "https://my-worker.workers.dev/proxy?url={url}",
 )
 
-# How many pages of the movie listing to scrape per run.
 MAX_LIST_PAGES = int(os.environ.get("MAX_LIST_PAGES", "10"))
-
-# Seconds to wait between iframe fetches to avoid rate-limiting.
 POLITE_DELAY = float(os.environ.get("POLITE_DELAY", "1.0"))
 
-# Movierulz domains to try (the site changes TLDs frequently).
 MOVIERULZ_DOMAINS = [
     "https://www.5movierulz.watch",
     "https://www.5movierulz.viajes",
@@ -63,7 +57,6 @@ MOVIERULZ_DOMAINS = [
     "https://www.5movierulz.lat",
 ]
 
-# Cache file for dedup (stored alongside the playlist).
 DEFAULT_CACHE_FILE = ".playlist_cache.json"
 
 
@@ -88,7 +81,7 @@ def _get(session, url, **kwargs):
 def discover_listing_pages(session, base_url):
     """
     Find paginated movie listing URLs from the Movierulz homepage.
-    Returns a list of absolute page URLs to scrape for movie links.
+    Also collects category listing pages for broader coverage.
     """
     for domain in MOVIERULZ_DOMAINS:
         resp = _get(session, domain)
@@ -96,17 +89,24 @@ def discover_listing_pages(session, base_url):
             continue
 
         html = resp.text
-
-        # Strategy A: Find pagination links (e.g. /page/2/, /page/3/)
-        page_links = set(re.findall(r'href=["\']([^"\']*\/page\/\d+[^"\']*)["\']', html))
         listing_urls = []
 
-        if page_links:
-            for link in page_links:
-                listing_urls.append(urljoin(domain, link))
-        else:
-            # Strategy B: No pagination — homepage is the listing
+        # Find pagination links: /page/0, /page/1, etc.
+        page_links = set(re.findall(r'href=["\']([^"\']*\/page\/\d+[^"\']*)["\']', html))
+        for link in page_links:
+            listing_urls.append(urljoin(domain, link))
+
+        if not listing_urls:
             listing_urls = [domain]
+
+        # Also add category pages found in navigation
+        category_links = set(re.findall(
+            r'href=["\'](/category/[^"\']+)["\']', html
+        ))
+        for link in category_links:
+            full = urljoin(domain, link)
+            if full not in listing_urls:
+                listing_urls.append(full)
 
         # Deduplicate and limit
         seen = set()
@@ -128,12 +128,19 @@ def discover_listing_pages(session, base_url):
 # Step 2: Extract movie page links from listing pages
 # ---------------------------------------------------------------------------
 
+# Current URL pattern: /title-year-quality-language-ID.html
+# e.g. /irumudi-2026-dvdscr-telugu-7377.html
+MOVIE_URL_RE = re.compile(
+    r'^https?://[^/]+/[a-z0-9]+-\d{4}-[a-z0-9]+-[a-z]+-\d+\.html$'
+)
+
+
 def extract_movie_links(session, listing_urls):
     """
-    Scrape each listing page and collect movie entries with:
-      - title (str)
-      - url   (str)
-      - year  (int, extracted from URL/title)
+    Scrape each listing page and collect movie entries.
+    Uses two extraction strategies:
+      1. <a title="Movie Name (Year) Quality [Language]" href="...">
+      2. <p><b>Movie Name (Year) Quality [Language]</b></p> inside .boxed .film
     """
     movies = []
     seen_urls = set()
@@ -144,22 +151,41 @@ def extract_movie_links(session, listing_urls):
             continue
 
         html = resp.text
-        link_patterns = [
-            r'href=["\']([^"\']*\/movie[^"\']*)["\']',
-            r'href=["\']([^"\']*movie-watch-online[^"\']*)["\']',
-        ]
-        found = set()
-        for pattern in link_patterns:
-            for match in re.findall(pattern, html):
-                abs_url = urljoin(listing_url, match)
-                if abs_url not in seen_urls:
-                    found.add(abs_url)
+        found = {}
 
-        for url in found:
+        # Strategy 1: Extract from <a title="..." href="movie-url.html">
+        for title, url in re.findall(
+            r'<a[^>]+title="([^"]+)"[^>]+href="(https?://[^"]+\.html)"',
+            html,
+        ):
+            if MOVIE_URL_RE.match(url) and url not in seen_urls:
+                found[url] = title
+
+        # Strategy 2: Extract from <p><b>title</b></p> with nearby <a href="...">
+        # Find all .boxed .film divs and extract title + link
+        for block in re.findall(
+            r'<div class="boxed film">(.*?)</div>\s*</li>', html, re.DOTALL
+        ):
+            title_match = re.search(r'<p><b>([^<]+)</b></p>', block)
+            link_match = re.search(r'<a[^>]+href="(https?://[^"]+\.html)"', block)
+            if title_match and link_match:
+                url = link_match.group(1)
+                title = title_match.group(1)
+                if MOVIE_URL_RE.match(url) and url not in seen_urls:
+                    found[url] = title
+
+        for url, title in found.items():
             seen_urls.add(url)
-            title = _guess_title_from_url(url)
-            year = _guess_year_from_url(url)
-            movies.append({"title": title, "url": url, "year": year})
+            year = _guess_year(title)
+            language = _guess_language(title, url)
+            quality = _guess_quality(title)
+            movies.append({
+                "title": title,
+                "url": url,
+                "year": year,
+                "language": language,
+                "quality": quality,
+            })
 
         print(f"[scraper]   {listing_url} -> {len(found)} movies")
         time.sleep(POLITE_DELAY)
@@ -167,22 +193,38 @@ def extract_movie_links(session, listing_urls):
     return movies
 
 
-def _guess_title_from_url(url):
-    """Extract a readable title from the URL slug."""
-    parts = url.split("/")
-    slug = parts[-2] if len(parts) >= 2 else url
-    slug = re.sub(
-        r'-(online|free|watch|movie|hindi|tamil|telugu|malayalam|kannada)$',
-        '', slug, flags=re.IGNORECASE,
-    )
-    slug = re.sub(r'-\d{4}', '', slug)
-    return re.sub(r'[-_]+', ' ', slug).strip().title()
-
-
-def _guess_year_from_url(url):
-    """Try to extract a 4-digit year from the URL."""
-    match = re.search(r'/(20\d{2})', url)
+def _guess_year(title):
+    """Extract year from title like 'Movie DVDScr [Telugu]'"""
+    match = re.search(r'\((\d{4})\)', title)
     return int(match.group(1)) if match else None
+
+
+def _guess_language(title, url):
+    """Detect language from title brackets or URL."""
+    combined = (title + " " + url).lower()
+    languages = {
+        "telugu": "Telugu",
+        "tamil": "Tamil",
+        "malayalam": "Malayalam",
+        "hindi": "Hindi",
+        "kannada": "Kannada",
+        "bengali": "Bengali",
+        "punjabi": "Punjabi",
+        "english": "English",
+        "hollywood": "English",
+    }
+    for key, label in languages.items():
+        if key in combined:
+            return label
+    return "Other"
+
+
+def _guess_quality(title):
+    """Extract quality from title like 'DVDScr', 'HDRip', 'CAM', etc."""
+    match = re.search(r'\((\d{4})\)\s+([^\s\[]+)', title)
+    if match:
+        return match.group(2)
+    return ""
 
 
 # ---------------------------------------------------------------------------
@@ -192,8 +234,6 @@ def _guess_year_from_url(url):
 def extract_streams(session, movies):
     """
     For each movie page, extract the raw HLS stream URL.
-    Uses the same 3-strategy regex approach from url_extractor.py.
-    Returns enriched movie dicts with a 'stream_url' key.
     """
     results = []
     total = len(movies)
@@ -206,12 +246,34 @@ def extract_streams(session, movies):
             print(f"  [skip] could not fetch page")
             continue
 
+        html = resp.text
+
         # Find embedded player iframes: var locations = ["url1", "url2"];
+        # Also check for: var players = [...]
         iframe_urls = []
-        match = re.search(r'var locations\s*=\s*\[(.*?)\];', resp.text)
+
+        # Pattern 1: var locations = [...]
+        match = re.search(r'var\s+locations\s*=\s*\[(.*?)\];', resp.text, re.DOTALL)
         if match:
             for raw_url in re.findall(r'"([^"]+)"', match.group(1)):
                 iframe_urls.append(raw_url.replace('\\/', '/'))
+
+        # Pattern 2: var players = [...]
+        if not iframe_urls:
+            match = re.search(r'var\s+players\s*=\s*\[(.*?)\];', resp.text, re.DOTALL)
+            if match:
+                for raw_url in re.findall(r'"([^"]+)"', match.group(1)):
+                    iframe_urls.append(raw_url.replace('\\/', '/'))
+
+        # Pattern 3: var file = "..." (single URL)
+        if not iframe_urls:
+            match = re.search(r'var\s+file\s*=\s*["\']([^"\']+)["\']', resp.text)
+            if match:
+                iframe_urls.append(match.group(1))
+
+        if not iframe_urls:
+            # Also try to find any iframe/src on the page
+            iframe_urls = re.findall(r'(?:iframe|src)\s*[=:]\s*["\']([^"\']*(?:player|embed|stream|video)[^"\']*)["\']', html, re.IGNORECASE)
 
         if not iframe_urls:
             print(f"  [skip] no player iframes found")
@@ -287,17 +349,14 @@ def build_m3u(movies, proxy_template):
         if not raw_url:
             continue
 
-        # Build proxy URL for the stream
         proxy_url = proxy_template.replace("{url}", requests.utils.quote(raw_url, safe=""))
 
-        # Build M3U metadata
         title = movie["title"]
         year = movie.get("year")
         group = _guess_group(movie)
         logo = ""
 
-        year_str = f" ({year})" if year else ""
-        display_name = f"{title}{year_str}"
+        display_name = title
 
         lines.append(
             f'#EXTINF:-1 tvg-name="{title}" tvg-logo="{logo}" '
@@ -310,21 +369,21 @@ def build_m3u(movies, proxy_template):
 
 def _guess_group(movie):
     """Determine a category group from the movie data."""
-    url_lower = movie["url"].lower()
-    title_lower = movie["title"].lower()
+    combined = (movie["url"] + " " + movie["title"]).lower()
 
     languages = {
-        "hindi": "Hindi",
-        "tamil": "Tamil",
         "telugu": "Telugu",
+        "tamil": "Tamil",
         "malayalam": "Malayalam",
+        "hindi": "Hindi",
         "kannada": "Kannada",
         "bengali": "Bengali",
         "punjabi": "Punjabi",
         "english": "English",
+        "hollywood": "English",
     }
     for key, label in languages.items():
-        if key in url_lower or key in title_lower:
+        if key in combined:
             return f"Movies / {label}"
 
     return "Movies / Other"
@@ -369,16 +428,12 @@ def deduplicate(movies, cache):
 
 
 def merge_with_existing(new_content, existing_file):
-    """
-    Merge newly extracted movies into the existing playlist.
-    New entries are appended. Duplicate detection done beforehand.
-    """
+    """Merge newly extracted movies into the existing playlist."""
     existing_path = Path(existing_file)
     if existing_path.exists() and existing_path.stat().st_size > 0:
         existing = existing_path.read_text()
         lines = existing.split("\n")
 
-        # Keep header (up to first blank line after #EXTM3U)
         header_end = 0
         for i, line in enumerate(lines):
             if line.strip() == "":
@@ -386,14 +441,12 @@ def merge_with_existing(new_content, existing_file):
                 break
         header = "\n".join(lines[:header_end])
 
-        # Collect existing segment URLs for dedup
         existing_urls = set()
         for line in lines:
             line = line.strip()
             if line and not line.startswith("#"):
                 existing_urls.add(line)
 
-        # Filter new entries against existing URLs
         new_lines = new_content.strip().split("\n")
         filtered = []
         skip = False
