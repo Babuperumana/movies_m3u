@@ -46,8 +46,12 @@ PROXY_TEMPLATE = os.environ.get(
     "https://my-worker.workers.dev/proxy?url={url}",
 )
 
-MAX_LIST_PAGES = int(os.environ.get("MAX_LIST_PAGES", "10"))
-POLITE_DELAY = float(os.environ.get("POLITE_DELAY", "1.0"))
+MAX_LIST_PAGES = int(os.environ.get("MAX_LIST_PAGES", "500"))
+POLITE_DELAY = float(os.environ.get("POLITE_DELAY", "0.5"))
+
+# Max movies to extract streams for per run (to stay within timeout).
+# The playlist grows incrementally over multiple runs.
+MAX_STREAMS_PER_RUN = int(os.environ.get("MAX_STREAMS_PER_RUN", "200"))
 
 MOVIERULZ_DOMAINS = [
     "https://www.5movierulz.watch",
@@ -80,8 +84,9 @@ def _get(session, url, **kwargs):
 
 def discover_listing_pages(session, base_url):
     """
-    Find paginated movie listing URLs from the Movierulz homepage.
-    Also collects category listing pages for broader coverage.
+    Find ALL paginated movie listing pages.
+    The site only links to pages 0 and 15 in pagination, but has 500+ pages.
+    We start from the last linked page and keep going until we hit empty pages.
     """
     for domain in MOVIERULZ_DOMAINS:
         resp = _get(session, domain)
@@ -91,33 +96,49 @@ def discover_listing_pages(session, base_url):
         html = resp.text
         listing_urls = []
 
-        # Find pagination links: /page/0, /page/1, etc.
+        # Find the highest page number from pagination links
         page_links = set(re.findall(r'href=["\']([^"\']*\/page\/\d+[^"\']*)["\']', html))
+        page_nums = []
         for link in page_links:
-            listing_urls.append(urljoin(domain, link))
+            m = re.search(r'/page/(\d+)', link)
+            if m:
+                page_nums.append(int(m.group(1)))
 
-        if not listing_urls:
-            listing_urls = [domain]
+        if not page_nums:
+            print("[scraper] No pagination found")
+            return [f"{domain}/movies"]
 
-        # Also add category pages found in navigation
-        category_links = set(re.findall(
-            r'href=["\'](/category/[^"\']+)["\']', html
-        ))
-        for link in category_links:
-            full = urljoin(domain, link)
-            if full not in listing_urls:
-                listing_urls.append(full)
+        # Start from the highest linked page and discover beyond it
+        start_page = max(page_nums)
+        print(f"[scraper] Pagination shows up to page {start_page}, discovering more...")
 
-        # Deduplicate and limit
-        seen = set()
-        unique = []
-        for u in listing_urls:
-            if u not in seen:
-                seen.add(u)
-                unique.append(u)
-        listing_urls = unique[:MAX_LIST_PAGES]
+        # Collect pages from 1 to start_page
+        for i in range(1, start_page + 1):
+            listing_urls.append(f"{domain}/movies/page/{i}")
 
-        print(f"[scraper] Found {len(listing_urls)} listing page(s) on {domain}")
+        # Keep fetching beyond the last linked page until empty
+        consecutive_empty = 0
+        page = start_page + 1
+        while consecutive_empty < 3:
+            resp = _get(session, f"{domain}/movies/page/{page}")
+            if not resp or resp.status_code != 200:
+                consecutive_empty += 1
+                page += 1
+                continue
+
+            titles = re.findall(r'<a[^>]+title="([^"]+)"[^>]+href="(https?://[^"]+\.html)"', resp.text)
+            valid_urls = [u for _, u in titles if MOVIE_URL_RE.match(u)]
+            unique_count = len(set(valid_urls))
+
+            if unique_count > 0:
+                listing_urls.append(f"{domain}/movies/page/{page}")
+                consecutive_empty = 0
+            else:
+                consecutive_empty += 1
+            page += 1
+
+        last_page = page - consecutive_empty - 1
+        print(f"[scraper] Discovered {len(listing_urls)} pages (1-{last_page})")
         return listing_urls
 
     print("[scraper] Could not reach any Movierulz domain")
@@ -494,18 +515,22 @@ def run(output="playlist.m3u", append=False, cache_file=DEFAULT_CACHE_FILE):
     """
     Run the full pipeline: scrape -> extract -> build M3U.
 
-    Returns the generated M3U content.
+    This is incremental:
+      - Scrapes ALL listing pages for movie links
+      - Skips movies already in the cache
+      - Extracts streams for up to MAX_STREAMS_PER_RUN new movies
+      - Over multiple runs, the playlist grows to include all movies
     """
     session = requests.Session()
     session.headers.update({"User-Agent": USER_AGENT})
 
-    # Step 1: Find listing pages
+    # Step 1: Find ALL listing pages
     listing_urls = discover_listing_pages(session, MOVIERULZ_DOMAINS[0])
     if not listing_urls:
         print("[error] No listing pages found -- is Movierulz reachable?")
         sys.exit(1)
 
-    # Step 2: Collect movie links
+    # Step 2: Collect ALL movie links from all pages
     movies = extract_movie_links(session, listing_urls)
     print(f"[scraper] Found {len(movies)} movies across all pages")
 
@@ -513,28 +538,33 @@ def run(output="playlist.m3u", append=False, cache_file=DEFAULT_CACHE_FILE):
         print("[info] No movies found -- skipping this run")
         return "#EXTM3U\n"
 
-    # Step 3: Extract stream URLs
-    enriched = extract_streams(session, movies)
+    # Step 3: Filter out already-processed movies using cache
+    cache = load_cache(cache_file)
+    pending = []
+    for movie in movies:
+        eid = _make_entry_id(movie["url"])
+        if eid not in cache:
+            pending.append(movie)
+
+    print(f"[dedup] {len(movies) - len(pending)} already processed, {len(pending)} pending")
+
+    if not pending:
+        print("[info] All movies already in playlist -- up to date")
+        return "#EXTM3U\n"
+
+    # Step 4: Extract streams for a batch of pending movies
+    batch = pending[:MAX_STREAMS_PER_RUN]
+    print(f"[extractor] Processing batch of {len(batch)} movies (max per run: {MAX_STREAMS_PER_RUN})")
+
+    enriched = extract_streams(session, batch)
     print(f"[extractor] Successfully extracted {len(enriched)} streams")
 
     if not enriched:
         print("[info] No streams extracted -- skipping this run")
         return "#EXTM3U\n"
 
-    # Step 4: Deduplicate against cache
-    cache = load_cache(cache_file)
-    new_movies, cache = deduplicate(enriched, cache)
-    print(
-        f"[dedup] {len(new_movies)} new movies "
-        f"(skipped {len(enriched) - len(new_movies)} duplicates)"
-    )
-
-    if not new_movies:
-        print("[info] No new movies to add -- playlist is up to date")
-        return "#EXTM3U\n"
-
     # Step 5: Build M3U content
-    m3u_content = build_m3u(new_movies, PROXY_TEMPLATE)
+    m3u_content = build_m3u(enriched, PROXY_TEMPLATE)
 
     # Step 6: Merge with existing playlist if appending
     if append:
@@ -553,7 +583,15 @@ def run(output="playlist.m3u", append=False, cache_file=DEFAULT_CACHE_FILE):
             cleaned.append(line)
     m3u_content = "\n".join(cleaned)
 
-    # Step 7: Save cache
+    # Step 8: Update cache with processed movies (success + failure)
+    for movie in enriched:
+        cache[_make_entry_id(movie["url"])] = movie
+    # Also mark failed ones so we don't retry them every run
+    enriched_urls = {_make_entry_id(m["url"]) for m in enriched}
+    for movie in batch:
+        eid = _make_entry_id(movie["url"])
+        if eid not in enriched_urls and eid not in cache:
+            cache[eid] = {"url": movie["url"], "failed": True}
     save_cache(cache, cache_file)
 
     return m3u_content
