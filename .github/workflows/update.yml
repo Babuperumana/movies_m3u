@@ -17,6 +17,16 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v4
 
+      - name: Restore caches
+        uses: actions/cache@v4
+        with:
+          path: |
+            .playlist_cache.json
+            .page_cache.json
+          key: playlist-cache-v1
+          restore-keys: |
+            playlist-cache-
+
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
