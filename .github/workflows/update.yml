@@ -64,11 +64,11 @@ jobs:
           if git diff --cached --quiet; then
             echo "No changes to commit -- playlist is up to date"
           else
-            git commit -m "chore: update playlist (${{ steps.count.outputs.count }} entries)
+            COMMIT_MSG="chore: update playlist (${{ steps.count.outputs.count }} entries)
 
-Auto-updated by GitHub Actions at $(date -u +"%Y-%m-%d %H:%M UTC")
+Auto-updated by GitHub Actions at $(date -u +"%Y-%m-%d %H:%M UTC")"
 
-Co-Authored-By: Claude Opus 4.8 (1M context) <noreply@anthropic.com>"
+            git commit -m "$COMMIT_MSG"
             git push
             echo "Committed and pushed updates"
           fi
