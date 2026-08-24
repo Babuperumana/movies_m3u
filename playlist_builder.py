@@ -236,6 +236,31 @@ MOVIE_URL_RE = re.compile(
 )
 
 
+GENERIC_TITLES = {
+    "movie watch online free",
+    "watch online free",
+    "full movie watch online",
+    "watch online",
+    "movierulz",
+    "home",
+    "featured movies free",
+}
+
+
+def _clean_title(title, url):
+    """Sanitize generic title strings and fall back to url/slug parsing if necessary."""
+    if not title:
+        return _guess_title_from_url(url)
+    cleaned = re.sub(
+        r'(?i)\b(movie watch online free|watch online free|full movie watch online|watch online)\b',
+        '',
+        title
+    ).strip()
+    if not cleaned or cleaned.lower() in GENERIC_TITLES:
+        return _guess_title_from_url(url)
+    return cleaned
+
+
 def extract_movie_links(session, listing_urls, page_cache=None):
     """
     Scrape each listing page and collect movie entries.
@@ -276,16 +301,7 @@ def extract_movie_links(session, listing_urls, page_cache=None):
         html = resp.text
         found = {}
 
-        # Strategy 1: Extract from <a title="..." href="movie-url.html">
-        for title, url in re.findall(
-            r'<a[^>]+title="([^"]+)"[^>]+href="(https?://[^"]+\.html)"',
-            html,
-        ):
-            if MOVIE_URL_RE.match(url) and url not in seen_urls:
-                found[url] = title
-
-        # Strategy 2: Extract from <p><b>title</b></p> with nearby <a href="...">
-        # Find all .boxed .film divs and extract title + link
+        # Strategy 1: Extract from <div class="boxed film"> <p><b>title</b></p> (most reliable)
         for block in re.findall(
             r'<div class="boxed film">(.*?)</div>\s*</li>', html, re.DOTALL
         ):
@@ -293,13 +309,24 @@ def extract_movie_links(session, listing_urls, page_cache=None):
             link_match = re.search(r'<a[^>]+href="(https?://[^"]+\.html)"', block)
             if title_match and link_match:
                 url = link_match.group(1)
-                title = title_match.group(1)
+                title = _clean_title(title_match.group(1), url)
                 if MOVIE_URL_RE.match(url) and url not in seen_urls:
                     found[url] = title
 
-        for url, title in found.items():
+        # Strategy 2: Extract from <a title="..." href="movie-url.html"> (fallback)
+        for title, url in re.findall(
+            r'<a[^>]+title="([^"]+)"[^>]+href="(https?://[^"]+\.html)"',
+            html,
+        ):
+            if MOVIE_URL_RE.match(url) and url not in seen_urls and url not in found:
+                cleaned_title = _clean_title(title, url)
+                if cleaned_title and cleaned_title.lower() not in GENERIC_TITLES:
+                    found[url] = cleaned_title
+
+        for url, raw_title in found.items():
             seen_urls.add(url)
-            year = _guess_year(title)
+            title = _clean_title(raw_title, url)
+            year = _guess_year(title) or _guess_year_from_url(url)
             language = _guess_language(title, url)
             quality = _guess_quality(title)
             movies.append({
@@ -318,37 +345,50 @@ def extract_movie_links(session, listing_urls, page_cache=None):
     return movies, page_cache
 
 
+
 def _guess_title_from_url(url):
     """Guess a title from a movie URL when no title is available."""
     try:
-        slug = url.split('/')[-1].replace('.html', '')
-        parts = slug.split('-')
-        # Extract text parts before the year
+        parts = [p for p in url.split("/") if p]
+        slug = parts[-1].replace(".html", "")
+        if "movie-watch-online" in slug or "watch-online" in slug or slug.isdigit():
+            if len(parts) >= 2 and not parts[-2].startswith("http") and "movierulz" not in parts[-2]:
+                slug = parts[-2]
+
+        subparts = slug.split("-")
         title_parts = []
-        for p in parts:
-            if re.match(r'^\d{4}$', p):
-                break
-            if p.isdigit():
-                break
+        for p in subparts:
+            if re.match(r"^\d{4}$", p):
+                val = int(p)
+                if 1920 <= val <= 2030:
+                    break
             title_parts.append(p)
-        title = ' '.join(title_parts).replace('-', ' ').title()
-        return title if title else slug.replace('-', ' ').title()
+        title = " ".join(title_parts).replace("-", " ").strip().title()
+        if not title or title.lower() in GENERIC_TITLES:
+            return slug.replace("-", " ").title()
+        return title
     except Exception:
         return "Unknown"
 
 
+
 def _guess_year_from_url(url):
-    """Extract year from URL pattern."""
-    match = re.search(r'/([a-z0-9-]+)-(\d{4})-[a-z0-9-]+-[a-z0-9-]+-(\d+)\.html', url)
+    """Extract 4-digit year from URL pattern."""
+    if not url:
+        return None
+    match = re.search(r'[-_\s/](20[0-2][0-9])[-_\s/.]', url)
     if match:
-        return int(match.group(2))
+        return int(match.group(1))
     return None
 
 
 def _guess_year(title):
-    """Extract year from title like 'Movie DVDScr [Telugu]'"""
-    match = re.search(r'\((\d{4})\)', title)
+    """Extract year from title string."""
+    if not title:
+        return None
+    match = re.search(r'\b(20[0-2][0-9])\b', title)
     return int(match.group(1)) if match else None
+
 
 
 def _guess_language(title, url):
@@ -528,25 +568,36 @@ def build_m3u(movies, proxy_template):
 
 
 def _guess_group(movie):
-    """Determine a category group from the movie data."""
-    combined = (movie["url"] + " " + movie["title"]).lower()
+    """Determine a category group with language and year subcategories from the movie data."""
+    lang = movie.get("language")
+    if not lang or lang == "Other":
+        combined = (movie.get("url", "") + " " + movie.get("title", "")).lower()
+        languages = {
+            "telugu": "Telugu",
+            "tamil": "Tamil",
+            "malayalam": "Malayalam",
+            "hindi": "Hindi",
+            "kannada": "Kannada",
+            "bengali": "Bengali",
+            "punjabi": "Punjabi",
+            "english": "English",
+            "hollywood": "English",
+        }
+        for key, label in languages.items():
+            if key in combined:
+                lang = label
+                break
+        else:
+            lang = "Other"
 
-    languages = {
-        "telugu": "Telugu",
-        "tamil": "Tamil",
-        "malayalam": "Malayalam",
-        "hindi": "Hindi",
-        "kannada": "Kannada",
-        "bengali": "Bengali",
-        "punjabi": "Punjabi",
-        "english": "English",
-        "hollywood": "English",
-    }
-    for key, label in languages.items():
-        if key in combined:
-            return f"Movies / {label}"
+    year = movie.get("year")
+    if not year:
+        year = _guess_year(movie.get("title", "")) or _guess_year_from_url(movie.get("url", ""))
 
-    return "Movies / Other"
+    if year:
+        return f"Movies / {lang} / {year}"
+    return f"Movies / {lang}"
+
 
 
 # ---------------------------------------------------------------------------
@@ -618,7 +669,7 @@ def deduplicate(movies, cache):
 def merge_with_existing(new_content, existing_file):
     """
     Append new movie entries to the existing playlist.
-    Skips entries whose stream URL already exists in the playlist.
+    Skips entries whose stream URL or (name, group) already exists in the playlist.
     Preserves all existing entries and their URLs intact.
     """
     existing_path = Path(existing_file)
@@ -627,39 +678,53 @@ def merge_with_existing(new_content, existing_file):
 
     existing = existing_path.read_text()
 
-    # Collect existing stream URLs for dedup
+    # Collect existing stream URLs and (tvg-name, group-title) keys for dedup
     existing_urls = set()
+    existing_keys = set()
     lines = existing.split("\n")
-    for i, line in enumerate(lines):
+    current_hdr = None
+    for line in lines:
         stripped = line.strip()
-        if stripped and not stripped.startswith("#"):
+        if stripped.startswith("#EXTINF"):
+            current_hdr = stripped
+        elif stripped and not stripped.startswith("#"):
             existing_urls.add(stripped)
+            if current_hdr:
+                name_m = re.search(r'tvg-name="([^"]+)"', current_hdr)
+                grp_m = re.search(r'group-title="([^"]+)"', current_hdr)
+                if name_m and grp_m:
+                    existing_keys.add((name_m.group(1), grp_m.group(1)))
+            current_hdr = None
 
     # Parse new entries into (header, url) pairs
     new_entries = []
     current_header = None
-    current_url = None
     for line in new_content.strip().split("\n"):
         stripped = line.strip()
-        # Skip the #EXTM3U header from build_m3u since existing has one
         if stripped == "#EXTM3U" or stripped == "":
             continue
         if stripped.startswith("#EXTINF"):
             current_header = stripped
-            current_url = None
         elif not stripped.startswith("#"):
             current_url = stripped
             if current_header:
                 new_entries.append((current_header, current_url))
                 current_header = None
-                current_url = None
 
-    # Filter: only keep entries whose URL isn't already present
-    unique_new = [
-        (header, url)
-        for header, url in new_entries
-        if url not in existing_urls
-    ]
+    # Filter: only keep entries whose URL and key aren't already present
+    unique_new = []
+    for header, url in new_entries:
+        if url in existing_urls:
+            continue
+        name_m = re.search(r'tvg-name="([^"]+)"', header)
+        grp_m = re.search(r'group-title="([^"]+)"', header)
+        if name_m and grp_m:
+            key = (name_m.group(1), grp_m.group(1))
+            if key in existing_keys:
+                continue
+            existing_keys.add(key)
+        existing_urls.add(url)
+        unique_new.append((header, url))
 
     if not unique_new:
         return existing
@@ -672,6 +737,7 @@ def merge_with_existing(new_content, existing_file):
     appended_lines.append("")
 
     return existing.rstrip("\n") + "\n" + "\n".join(appended_lines) + "\n"
+
 
 
 # ---------------------------------------------------------------------------
