@@ -177,14 +177,16 @@ def discover_listing_pages(session, base_url, page_cache=None):
 
         # Build list of pages to fetch (include pages marked empty to retry)
         to_fetch = []
+        
+        # Always check first 5 pages for newly added movies
+        for i in range(1, 6):
+            to_fetch.append(f"{domain}/movies/page/{i}")
+            
         for i in range(start_page, end_page + 1):
             url = f"{domain}/movies/page/{i}"
-            if url not in page_cache:
-                to_fetch.append(url)
-            elif not page_cache[url]:
-                # Empty cache entry — retry once to confirm
-                to_fetch.append(url)
-            # else: has cached movies, skip
+            if url not in page_cache or not page_cache[url]:
+                if url not in to_fetch:
+                    to_fetch.append(url)
 
         if not to_fetch:
             print("[scraper] No new pages to discover")
@@ -775,7 +777,10 @@ def run(output="playlist.m3u", append=False, cache_file=DEFAULT_CACHE_FILE):
     if not movies:
         print("[info] No movies found -- skipping this run")
         save_page_cache(page_cache, DEFAULT_PAGE_CACHE_FILE)
-        return "#EXTM3U\n"
+        m3u_content = "#EXTM3U\n"
+        if append:
+            m3u_content = merge_with_existing(m3u_content, output)
+        return m3u_content
 
     # Step 3: Filter out already-processed movies using cache
     pending = []
@@ -789,7 +794,10 @@ def run(output="playlist.m3u", append=False, cache_file=DEFAULT_CACHE_FILE):
     if not pending:
         print("[info] All movies already in playlist -- up to date")
         save_page_cache(page_cache, DEFAULT_PAGE_CACHE_FILE)
-        return "#EXTM3U\n"
+        m3u_content = "#EXTM3U\n"
+        if append:
+            m3u_content = merge_with_existing(m3u_content, output)
+        return m3u_content
 
     # Prioritize 2026 movies (False/0 comes before True/1)
     pending.sort(key=lambda m: m.get("year") != 2026)
