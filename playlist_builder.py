@@ -59,8 +59,8 @@ MAX_DISCOVERY_PAGES = int(os.environ.get("MAX_DISCOVERY_PAGES", "200"))  # Cap p
 MAX_STREAMS_PER_RUN = int(os.environ.get("MAX_STREAMS_PER_RUN", "50"))
 
 MOVIERULZ_DOMAINS = [
+    "https://www.5movierulz.plumbing",
     "https://www.5movierulz.watch",
-    "https://www.5movierulz.viajes",
     "https://www.5movierulz.cfd",
     "https://www.5movierulz.green",
     "https://www.5movierulz.lat",
