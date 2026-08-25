@@ -791,6 +791,9 @@ def run(output="playlist.m3u", append=False, cache_file=DEFAULT_CACHE_FILE):
         save_page_cache(page_cache, DEFAULT_PAGE_CACHE_FILE)
         return "#EXTM3U\n"
 
+    # Prioritize 2026 movies (False/0 comes before True/1)
+    pending.sort(key=lambda m: m.get("year") != 2026)
+
     # Step 4: Extract streams for a batch of pending movies
     batch = pending[:MAX_STREAMS_PER_RUN]
     print(f"[extractor] Processing batch of {len(batch)} movies (max per run: {MAX_STREAMS_PER_RUN})")
