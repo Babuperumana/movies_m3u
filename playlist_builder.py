@@ -56,7 +56,7 @@ MAX_DISCOVERY_PAGES = int(os.environ.get("MAX_DISCOVERY_PAGES", "200"))  # Cap p
 
 # Max movies to extract streams for per run (to stay within timeout).
 # The playlist grows incrementally over multiple runs.
-MAX_STREAMS_PER_RUN = int(os.environ.get("MAX_STREAMS_PER_RUN", "50"))
+MAX_STREAMS_PER_RUN = int(os.environ.get("MAX_STREAMS_PER_RUN", "100"))
 
 MOVIERULZ_DOMAINS = [
     "https://www.5movierulz.plumbing",
