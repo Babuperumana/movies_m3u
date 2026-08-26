@@ -812,14 +812,19 @@ def run(output="playlist.m3u", append=False, cache_file=DEFAULT_CACHE_FILE):
     # Step 3: Filter out already-processed movies using cache and existing playlist
     pending = []
     existing_keys = _get_existing_keys(output) if append else set()
+    current_time = time.time()
 
     for movie in movies:
         eid = _make_entry_id(movie["url"])
         if eid in cache:
-            # If the movie failed in a previous run, let's try it again
+            # If the movie failed in a previous run, try again after 3 days (259200 seconds)
             cached_data = cache[eid]
             if isinstance(cached_data, dict) and cached_data.get("failed") is True:
-                pass # Retry this movie
+                failed_at = cached_data.get("failed_at", 0)
+                if current_time - failed_at > 259200:
+                    pass # Retry this movie
+                else:
+                    continue
             else:
                 continue
             
@@ -883,7 +888,17 @@ def run(output="playlist.m3u", append=False, cache_file=DEFAULT_CACHE_FILE):
     # Step 8: Update caches
     for movie in enriched:
         cache[_make_entry_id(movie["url"])] = movie
-    # We no longer cache failed movies, so they will be retried in the next run.
+        
+    enriched_urls = {_make_entry_id(m["url"]) for m in enriched}
+    current_time = time.time()
+    for movie in batch:
+        eid = _make_entry_id(movie["url"])
+        if eid not in enriched_urls:
+            if eid not in cache:
+                cache[eid] = {"url": movie["url"], "failed": True, "failed_at": current_time}
+            elif isinstance(cache[eid], dict) and cache[eid].get("failed") is True:
+                cache[eid]["failed_at"] = current_time
+
     save_cache(cache, cache_file)
     save_page_cache(page_cache, DEFAULT_PAGE_CACHE_FILE)
 
