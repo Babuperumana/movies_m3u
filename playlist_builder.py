@@ -746,6 +746,33 @@ def merge_with_existing(new_content, existing_file):
 # Main
 # ---------------------------------------------------------------------------
 
+def _get_existing_keys(existing_file):
+    """Read the existing M3U file and return a set of (tvg-name, group-title)."""
+    existing_keys = set()
+    existing_path = Path(existing_file)
+    if not existing_path.exists() or existing_path.stat().st_size == 0:
+        return existing_keys
+
+    try:
+        existing = existing_path.read_text(encoding="utf-8")
+        lines = existing.split("\n")
+        current_hdr = None
+        for line in lines:
+            stripped = line.strip()
+            if stripped.startswith("#EXTINF"):
+                current_hdr = stripped
+            elif stripped and not stripped.startswith("#"):
+                if current_hdr:
+                    name_m = re.search(r'tvg-name="([^"]+)"', current_hdr)
+                    grp_m = re.search(r'group-title="([^"]+)"', current_hdr)
+                    if name_m and grp_m:
+                        existing_keys.add((name_m.group(1), grp_m.group(1)))
+                current_hdr = None
+    except Exception as exc:
+        print(f"[warn] Failed to read existing keys: {exc}")
+    return existing_keys
+
+
 def run(output="playlist.m3u", append=False, cache_file=DEFAULT_CACHE_FILE):
     """
     Run the full pipeline: scrape -> extract -> build M3U.
@@ -782,12 +809,23 @@ def run(output="playlist.m3u", append=False, cache_file=DEFAULT_CACHE_FILE):
             m3u_content = merge_with_existing(m3u_content, output)
         return m3u_content
 
-    # Step 3: Filter out already-processed movies using cache
+    # Step 3: Filter out already-processed movies using cache and existing playlist
     pending = []
+    existing_keys = _get_existing_keys(output) if append else set()
+
     for movie in movies:
         eid = _make_entry_id(movie["url"])
-        if eid not in cache:
-            pending.append(movie)
+        if eid in cache:
+            continue
+            
+        # Check against existing playlist so we don't extract duplicates
+        if append:
+            group = _guess_group(movie)
+            if (movie["title"], group) in existing_keys:
+                cache[eid] = {"url": movie["url"], "failed": False, "reason": "duplicate_in_playlist"}
+                continue
+
+        pending.append(movie)
 
     print(f"[dedup] {len(movies) - len(pending)} already processed, {len(pending)} pending")
 
