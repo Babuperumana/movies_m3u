@@ -875,11 +875,7 @@ def run(output="playlist.m3u", append=False, cache_file=DEFAULT_CACHE_FILE):
     # Step 8: Update caches
     for movie in enriched:
         cache[_make_entry_id(movie["url"])] = movie
-    enriched_urls = {_make_entry_id(m["url"]) for m in enriched}
-    for movie in batch:
-        eid = _make_entry_id(movie["url"])
-        if eid not in enriched_urls and eid not in cache:
-            cache[eid] = {"url": movie["url"], "failed": True}
+    # We no longer cache failed movies, so they will be retried in the next run.
     save_cache(cache, cache_file)
     save_page_cache(page_cache, DEFAULT_PAGE_CACHE_FILE)
 
