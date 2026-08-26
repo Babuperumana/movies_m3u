@@ -855,7 +855,10 @@ def run(output="playlist.m3u", append=False, cache_file=DEFAULT_CACHE_FILE):
     if not enriched:
         print("[info] No streams extracted -- skipping this run")
         save_page_cache(page_cache, DEFAULT_PAGE_CACHE_FILE)
-        return "#EXTM3U\n"
+        m3u_content = "#EXTM3U\n"
+        if append:
+            m3u_content = merge_with_existing(m3u_content, output)
+        return m3u_content
 
     # Step 5: Build M3U content
     m3u_content = build_m3u(enriched, PROXY_TEMPLATE)
