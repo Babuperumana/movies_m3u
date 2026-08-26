@@ -816,7 +816,12 @@ def run(output="playlist.m3u", append=False, cache_file=DEFAULT_CACHE_FILE):
     for movie in movies:
         eid = _make_entry_id(movie["url"])
         if eid in cache:
-            continue
+            # If the movie failed in a previous run, let's try it again
+            cached_data = cache[eid]
+            if isinstance(cached_data, dict) and cached_data.get("failed") is True:
+                pass # Retry this movie
+            else:
+                continue
             
         # Check against existing playlist so we don't extract duplicates
         if append:
